@@ -1,0 +1,126 @@
+<html>
+    <head>
+         <title>Contacto</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        
+
+    </head>
+    
+    <body>
+        <header>
+
+            <div class="contenedor">
+
+                    <h1>Añoranzas Chaqueñas</h1>
+
+                    <input type="checkbox" id = "menu-bar">
+                    <label class = "icon-menu" for = "menu-bar"></label>
+
+                    <nav class = "menu">
+                        <a href="/inicio">Inicio</a>
+                        <a href="/reserva">Reservas</a>
+                        <a href="/actividades">Actividades</a>
+                        <a href="/instalaciones">Instalaciones</a>
+                        <a href="/contacto">Contacto</a>
+                    </nav>
+            </div>
+        </header>
+    
+        <main>
+            
+            <section class="contacto">
+                
+                <div class="datos">
+                    
+                    <div class="correo">
+                    
+                        <input type="text" class="mail" placeholder="E-mail" id="email">
+                    
+                    </div>
+                
+                    <div class="consulta">
+                    
+                        <textarea rows="15" wrap="soft" class="texto" placeholder="Escriba su consulta..." id="consulta"></textarea>
+                    
+                    </div>
+                    
+                    <div class="enviar">
+                        
+                        <button onclick="reserva()" class="boton">Enviar</button>
+                        
+                        <!-- SCRIPT BOTON CONTACTO-->
+                        
+                        <script>
+                            
+                            
+                            function reserva(){
+                                
+                                //email
+                                var email =  document.getElementById('email').value;
+                                
+                                //consulta
+                                var consulta =  document.getElementById('consulta').value;
+                                
+                                //Verificaion vacío
+                                if(email.empty){
+                                    
+                                    window.alert("Complete el campo E-mail.");
+                                    
+                                }else{
+                                    
+                                    console.log("Email: " + email);
+                                    
+                                }
+                                
+                                
+                                if(consulta.empty){
+                                    
+                                    window.alert("Complete el campo Consulta.");
+                                    
+                                }else{
+                                    
+                                    console.log("Consulta: " + consulta);
+                                    
+                                }
+
+                               
+                            }
+                        
+                        
+                        </script>
+                        
+                    </div>
+                    
+                    
+                </div>
+
+            </section>
+
+        </main>
+        
+        <footer>
+           
+           <div class = "contenedor">
+               
+               <p>Decodex. Todos los derechos reservados &reg; 2019.</p>
+               
+               <div class="sociales">
+                   
+                   <a class="icon-twitter" href="#"></a>
+                   <a class="icon-instagram" href="#"></a>
+                   <a class="icon-facebook-squared" href="#"></a>
+                   
+               </div>
+
+           </div>
+            
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+fotter{
+  position: absolute;
+  bottom: 0;
+}
+
+.contacto{
+    background: linear-gradient(to right, #5a3f37, #2c7744);
+}
+
+.datos{
+    padding: 8% 25%;
+    display: block;
+    
+}
+
+.mail{
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.texto{
+    font: 400 13.3333px Arial;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    resize: none;
+    outline: none;
+}
+
+.enviar, .boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton{
+    margin-top: 15px;
+    font-size: 16px;
+    font: Arial;
+    padding: 8px;
+    //font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+.boton:hover{
+    
+    background: rgba(255,255,255,0.3);
+    
+}
