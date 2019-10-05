@@ -13,7 +13,7 @@ public class FrontPageController {
    * muestra la pagina de inicio
    * @return el html de la pagina de inicio
    */
-  @GetMapping("/inicio")
+  @GetMapping("/")
   public String index() {
     return "inicio";
   }
