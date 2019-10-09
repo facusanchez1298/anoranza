@@ -20,6 +20,13 @@ public class UserService implements UserDetailsService {
     @Autowired
     private IUserRepository repo;
 
+
+    /**
+     * Conexion a base de datos
+     * @param s
+     * @return
+     * @throws UsernameNotFoundException
+     */
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         User us = repo.findByuserName(s);

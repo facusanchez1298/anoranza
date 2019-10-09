@@ -23,11 +23,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return bCryptPasswordEncoder;
     }
 
+    /**
+     * Acá hago la conexion a base de datos para que use los usernames y las claves de la BD, de paso le doy el
+     * encriptador.
+     * @param auth
+     * @throws Exception
+     */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
         auth.userDetailsService(userDetailsService).passwordEncoder(bCrypt);
     }
 
+    /**
+     * Acá me aseguro que el usuario tenga permiso de revisar cualquier pagina excepto reserva y contacto.
+     * @param http
+     * @throws Exception
+     */
     protected void configure(HttpSecurity http) throws Exception{
         http
                 .httpBasic()
