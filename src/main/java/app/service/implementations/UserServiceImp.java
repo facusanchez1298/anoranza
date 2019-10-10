@@ -1,8 +1,8 @@
-package app.service.impl;
+package app.service.implementations;
 
 import app.model.User;
 import app.repository.UserRepository;
-import app.service.UserService;
+import app.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,12 +10,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImp implements UserService {
 
     private UserRepository userRepository;
 
     @Autowired
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImp(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
