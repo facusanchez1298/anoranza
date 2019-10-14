@@ -1,17 +1,20 @@
 package app.controller;
+import app.service.implementations.MailComponent;
 import app.service.implementations.MailServiceImp;
 import javax.mail.MessagingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class SendMailController {
 
   @Autowired
   private MailServiceImp mailService;
+
+@Autowired
+private MailComponent mailComponent;
 
   @GetMapping("/inicioMail")
   public String index(){

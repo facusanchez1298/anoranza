@@ -1,26 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" line="28" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" line="31" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4845db-aa4e-48b7-b244-4de8ee583b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/excepciones/Classes/UnauthorizerUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/excepciones/Classes/UserNullExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/excepciones/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/UserRecived.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/repository/DaoUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/repository/UserRecivedRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/interfaces/UserServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/implementations/MailComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/interfaces/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/contactoAnoranza.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/pesca2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/implementations/UserRecivedServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/interfaces/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/interfaces/UserRecivedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gs-rest-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gs-rest-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/actividades.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/actividades.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/contacto.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/contacto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/reserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actividades.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/actividades.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/historia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/historia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/instalaciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/instalaciones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/reserva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/FrontPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/FrontPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/SendMailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/SendMailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/actividades.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/actividades.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/banner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contacto.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/contacto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/historia.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/historia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/reserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/reserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/font/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/animation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-codes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-embedded.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-embedded.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-ie7-codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-ie7-codes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/actividades.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/actividades.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/historia.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/historia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/instalaciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/instalaciones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/reserva.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,59 +78,60 @@
     <session id="-1235490787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.152" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.84" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="css" value="2" />
-          <entry key="html" value="19" />
+          <entry key="html" value="36" />
           <entry key="iml" value="1" />
-          <entry key="java" value="47" />
-          <entry key="js" value="1" />
+          <entry key="java" value="60" />
+          <entry key="js" value="3" />
           <entry key="json" value="2" />
-          <entry key="properties" value="4" />
-          <entry key="xml" value="3" />
+          <entry key="properties" value="6" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="19" />
+          <entry key="HTML" value="36" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="47" />
+          <entry key="JAVA" value="60" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Properties" value="4" />
-          <entry key="XML" value="3" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Properties" value="6" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="68" />
           <entry key="dummy" value="23" />
-          <entry key="html" value="74" />
-          <entry key="java" value="1267" />
-          <entry key="properties" value="202" />
-          <entry key="xml" value="27" />
+          <entry key="html" value="109" />
+          <entry key="java" value="1356" />
+          <entry key="properties" value="245" />
+          <entry key="xml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="68" />
-          <entry key="HTML" value="74" />
-          <entry key="JAVA" value="1267" />
+          <entry key="HTML" value="109" />
+          <entry key="JAVA" value="1356" />
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Properties" value="202" />
-          <entry key="XML" value="27" />
+          <entry key="Properties" value="245" />
+          <entry key="XML" value="44" />
         </counts>
       </usages-collector>
     </session>
@@ -98,23 +139,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="250">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/model/User.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="227">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,64 +169,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/service/interfaces/UserRecivedService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/service/interfaces/UserServices.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserRecivedServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="60" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="60" />
+            <state relative-caret-position="136">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -197,6 +198,54 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserRecivedServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-177">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/actividades.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="133" column="7" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
+              <folding>
+                <element signature="e#494#4292#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -204,12 +253,16 @@
       <list>
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>{/</find>
+      <find>sen</find>
+      <find>se</find>
+      <find>send</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,19 +280,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/contacto.css" />
-        <option value="$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/reserva.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/instalaciones.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/inicio.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/historia.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/contacto.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/actividades.html" />
         <option value="$PROJECT_DIR$/src/main/java/app/service/interfaces/MailService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/app/model/UserRecived.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/excepciones/Classes/NotEnoughStockException.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/repository/DaoUser.java" />
@@ -249,6 +291,19 @@
         <option value="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/excepciones/ExceptionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/contacto.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/historia.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/inicio.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/instalaciones.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/reserva.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/interfaces/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/MailComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/actividades.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -358,6 +413,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringPractice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,23 +434,6 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="implementations" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SpringPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringPractice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringPractice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -395,15 +442,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570892115922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571013979328" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\trabajos java\SpringPractice\src\main\java\app" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="app.service.interfaces" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="app.service.implementations" />
@@ -411,9 +462,10 @@
       <recent name="app.repository" />
       <recent name="app.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\java\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -474,7 +526,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -484,13 +536,13 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3276923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.34153846" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34153846" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Sequence" order="11" />
@@ -548,10 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reserva.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/actividades.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -562,50 +610,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/actividades.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contacto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/historia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/inicio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/instalaciones.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reserva.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="58" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="34" selection-end-column="58" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar!/javax/mail/internet/InternetAddress.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,48 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/model/UserRecived.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -670,27 +634,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/StockNullException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/EmptyShoppingCartException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/ProductNullException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/LowerQuantityException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/StockNullException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/EmptyShoppingCartException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/ProductNullException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/LowerQuantityException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/UnauthorizerUserException.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/StockExistingException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/NotEnoughStockException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/StockExistingException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/NotEnoughStockException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/Classes/UserNullExeption.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -711,23 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserRecivedServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -735,34 +670,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -785,11 +692,167 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="68">
+          <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/pru.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reserva.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contacto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/historia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/inicio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/instalaciones.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reserva.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/interfaces/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/MailComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/excepciones/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserRecivedServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/actividades.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="133" column="7" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
+          <folding>
+            <element signature="e#494#4292#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
