@@ -4,12 +4,19 @@ body{
 
 .date{
     background-color: aliceblue;
-    margin-left: 15%;
+/*
+    margin-left: 10%;
+    margin-right: 10%;
+*/
+/*
     margin-top: 150px;
-    width: 70%;
-    height: 530px;
     margin-bottom: 60px;
+*/
     
+    width: 80%;
+    height: 530px;
+    border-radius: 5px;
+    margin: 9% auto;
 }
 
 .date h3{
@@ -21,7 +28,7 @@ body{
     
     display: block;
     margin-left: 20%;
-    margin-top: 50px;
+    margin-top: 40px;
     
 }
 
@@ -70,7 +77,20 @@ body{
 }
 
 
-
+@media (max-width: 400px){
+    
+    .date{
+        margin: 15% 11%;
+    }
+    
+    .fechas,.habitaciones,.personas,.reservar{
+        margin-left: 10%;
+        
+        width: 100%;
+        
+    }
+    
+}
 
 
 

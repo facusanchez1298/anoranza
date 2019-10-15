@@ -56,9 +56,15 @@ section{
     margin-bottom: 25px;
 }
 
+
+
+
+
 #bienvenidos,#blog,#info {
     text-align: center;
 }
+
+
 
 #bienvenidos p{
     text-indent: 15px;
@@ -70,7 +76,7 @@ section{
 }
 
 h3, h4,h5,h6{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -92,6 +98,7 @@ footer .contenedor{
     padding-bottom: 5px;
     background-color: dimgray;
     width: 100%;
+    text-align: center
 }
 
 .copy{
@@ -110,6 +117,64 @@ footer .contenedor{
     text-decoration: none;
 }
 
+.ubicacion{
+    padding: 0px 5%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#ubicacion{
+    padding-top: 60px;
+    
+}
+
+
+.mapa{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.chaco-turismo{
+/*
+    display: block;
+    text-align: center;
+    margin-top: 4%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+*/
+    position: relative;
+    padding-bottom: 56.25%;
+    
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.chaco-turismo iframe,
+.chaco-turismo object,
+.chaco-turismo embed{
+    
+    position: absolute;
+    top: 0;
+    
+    width: 90%;
+    height: 100%;
+    
+    
+}
+
+
+@media (max-width: 400){
+    
+    footer .contenedor{
+        text-align: center;
+    }
+    
+}
 
 
 
