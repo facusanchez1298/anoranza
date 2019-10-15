@@ -1,22 +1,31 @@
 package app.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.ManyToOne;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
-@Entity
+@Entity(name = "reservation")
 public class Reservation {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
-  @ManyToOne
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JsonBackReference
+  @NotNull
   private User user;
+  @NotNull
   private Date ingreso;
+  @NotNull
   private Date salida;
+  @NotNull
   private int personas;
+  @NotNull
   private int habitaciones;
 
   public Reservation() {

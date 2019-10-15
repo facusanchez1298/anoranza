@@ -4,14 +4,14 @@ package app.excepciones;
 import app.excepciones.Classes.UnauthorizerUserException;
 import app.excepciones.Classes.UserNullExeption;
 import app.model.User;
-import app.repository.DaoUser;
+import app.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ExceptionController {
-  private final DaoUser dbUser;
+  private final UserRepository dbUser;
 
-  public ExceptionController(DaoUser dbUser) {
+  public ExceptionController(UserRepository dbUser) {
     this.dbUser = dbUser;
   }
 

@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(path = "/test")
 public class UserController {
     private UserServices userService;
 
@@ -21,17 +20,17 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping("/users")
+    @GetMapping("/users")
     public List<User> userList() {
         return userService.findAll();
     }
 
-    @RequestMapping("/{id}")
+    @GetMapping("/{id}")
     public User findOne(@PathVariable int id) {
         return userService.findById(id);
     }
 
-    @RequestMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteUser(@PathVariable int id) {
         return userService.removeUserById(id);
     }

@@ -1,35 +1,21 @@
 package app.service.implementations;
-
-import java.util.Properties;
-import javax.mail.Authenticator;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
 public class MailServiceImp {
 
-/*  @Autowired
+  @Autowired
   private JavaMailSender javaMailSender;
 
   public void sendMail(String from, String to, String subject, String body) {
-
     SimpleMailMessage mail = new SimpleMailMessage();
-
     mail.setFrom(from);
     mail.setTo(to);
     mail.setSubject(subject);
     mail.setText(body);
-
     javaMailSender.send(mail);
   }
 
@@ -43,8 +29,9 @@ public class MailServiceImp {
     mail.setText("cuerpo");
 
     javaMailSender.send(mail);
-  }*/
+  }
 
+  /*
 public void enviar() throws MessagingException {
   Properties prop = new Properties();
   prop.put("mail.smtp.auth", true);
@@ -78,4 +65,5 @@ public void enviar() throws MessagingException {
 
   Transport.send(message);
 }
+*/
 }

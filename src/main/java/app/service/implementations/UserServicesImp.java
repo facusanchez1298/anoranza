@@ -4,7 +4,7 @@ package app.service.implementations;
 import app.excepciones.Classes.UserNullExeption;
 import app.excepciones.ExceptionController;
 import app.model.User;
-import app.repository.DaoUser;
+import app.repository.UserRepository;
 import app.service.interfaces.UserServices;
 import java.util.List;
 import java.util.Optional;
@@ -13,11 +13,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServicesImp implements UserServices {
-  private final DaoUser dbUser;
+  private final UserRepository dbUser;
   private final ExceptionController controller;
 
 
-  public UserServicesImp(DaoUser dbUser, ExceptionController controller) {
+  public UserServicesImp(UserRepository dbUser, ExceptionController controller) {
     this.dbUser = dbUser;
     this.controller = controller;
   }

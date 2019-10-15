@@ -1,11 +1,11 @@
 package app.controller;
 import app.service.implementations.MailComponent;
 import app.service.implementations.MailServiceImp;
-import javax.mail.MessagingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class SendMailController {
@@ -21,7 +21,7 @@ private MailComponent mailComponent;
     return "send_mail_view";
   }
 
- /* @PostMapping("/sendMail")
+ @PostMapping("/sendMail")
   public String sendMail(@RequestParam("name") String name, @RequestParam("mail") String mail,
     @RequestParam("subject") String subject, @RequestParam("body") String body) {
 
@@ -29,8 +29,9 @@ private MailComponent mailComponent;
     mailService.sendMail("decodextech@gmail.com", mail, subject, message);
 
     return "send_mail_view";
-  }*/
+  }
 
+  /*
   @PostMapping("/send")
   public String sendMail() {
 
@@ -41,5 +42,5 @@ private MailComponent mailComponent;
     }
 
     return "send_mail_view";
-  }
+  }*/
 }

@@ -1,5 +1,6 @@
 package app.service.interfaces;
 
+
 import javax.mail.MessagingException;
 
 public interface EmailService {
