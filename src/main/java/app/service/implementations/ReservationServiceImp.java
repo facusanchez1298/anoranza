@@ -26,4 +26,9 @@ public class ReservationServiceImp implements ReservationService {
   public List<Reservation> getAll() {
     return reservationRepository.findAll();
   }
+
+  public boolean isFree(int id_habitacion){
+    //reservationRepository. todo armar esta funcion
+    return true;
+  }
 }

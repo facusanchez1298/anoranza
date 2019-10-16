@@ -2,16 +2,23 @@ package app.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import java.util.Date;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 
 @Entity(name = "reservation")
 public class Reservation {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
@@ -20,13 +27,17 @@ public class Reservation {
   @NotNull
   private User user;
   @NotNull
+  @Temporal(TemporalType.DATE)
   private Date ingreso;
   @NotNull
+  @Temporal(TemporalType.DATE)
   private Date salida;
-  @NotNull
-  private int personas;
-  @NotNull
-  private int habitaciones;
+  @ManyToMany
+  @JoinTable(
+    name = "habitaciones_reservations",
+    joinColumns = @JoinColumn(name = "reservation_id"),
+    inverseJoinColumns = @JoinColumn(name = "habitacion_id"))
+  private List<Habitacion> habitaciones;
 
   public Reservation() {
   }
@@ -63,19 +74,13 @@ public class Reservation {
     this.salida = salida;
   }
 
-  public int getPersonas() {
-    return personas;
-  }
-
-  public void setPersonas(int personas) {
-    this.personas = personas;
-  }
-
-  public int getHabitaciones() {
+  public List<Habitacion> getHabitaciones() {
     return habitaciones;
   }
 
-  public void setHabitaciones(int habitaciones) {
+  public void setHabitaciones(List<Habitacion> habitaciones) {
     this.habitaciones = habitaciones;
   }
+
+
 }
