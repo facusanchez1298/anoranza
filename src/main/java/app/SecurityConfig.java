@@ -1,6 +1,8 @@
 package app;
 
+import app.model.UserRecived;
 import app.service.UserService;
+import app.service.interfaces.UserRecivedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -47,7 +49,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests().antMatchers("/contacto").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/**").permitAll();
+                .authorizeRequests().antMatchers("/**").permitAll()
+                .and()
+                .logout();
         ;
 
     }

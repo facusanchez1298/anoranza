@@ -1,6 +1,8 @@
 package app;
 
 import app.model.User;
+import app.model.UserRecived;
+import app.repository.UserRecivedRepository;
 import app.repository.UserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,17 +16,17 @@ import static org.junit.Assert.assertTrue;
 @SpringBootTest
 public class ApplicationTest {
     @Autowired
-    private UserRepository repo;
+    private UserRecivedRepository repo;
 
     @Autowired
     private BCryptPasswordEncoder encoder;
 
     @Test
     public void createUserTest(){
-        User user = new User();
+        UserRecived user = new UserRecived();
         user.setUserName("calvin");
         user.setPassword(encoder.encode("prueba"));
-        User returned = repo.save(user);
+        UserRecived returned = repo.save(user);
 
         assertTrue(user.getUserName().equalsIgnoreCase(returned.getUserName()));
 
