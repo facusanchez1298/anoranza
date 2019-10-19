@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 
 public interface ReservationService {
-  ResponseEntity addReservation(Reservation reservation);
+  ResponseEntity addReservation(Reservation reservation, int idHabitacion, int quantity);
 
   List<Reservation> getAll();
 

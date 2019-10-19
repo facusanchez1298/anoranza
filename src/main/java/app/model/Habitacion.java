@@ -1,6 +1,8 @@
 package app.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -12,7 +14,11 @@ public class Habitacion{
   private int capacidad;
   private String tipo;
   private String description;
-  @OneToMany(mappedBy = "habitacion")
+  @OneToMany(
+    mappedBy = "habitacion",
+    cascade = CascadeType.ALL,
+    orphanRemoval = true)
+  @JsonManagedReference
   private List<Reservation_Habitacion> reservation;
 
   public Habitacion() {

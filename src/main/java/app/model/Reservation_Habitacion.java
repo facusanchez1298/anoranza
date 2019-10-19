@@ -1,5 +1,6 @@
 package app.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.Entity;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
@@ -13,44 +14,46 @@ import javax.persistence.Id;
 @IdClass(Reservation_HabitacionId.class)
 public class Reservation_Habitacion {
   @Id
-  private Long idReservation;
+  private int idReservation;
 
   @Id
-  private Long idHabitacion;
+  private int idHabitacion;
 
   private int cantidad;
 
   @ManyToOne
   @JoinColumn(name = "idReservation", referencedColumnName = "id", insertable = false, updatable = false)
+  @JsonBackReference
   private Reservation reservation;
 
   @ManyToOne
   @JoinColumn(name = "idHabitacion", referencedColumnName = "id", insertable = false, updatable = false)
+  @JsonBackReference
   private Habitacion habitacion;
 
   public Reservation_Habitacion() {
   }
 
-  public Reservation_Habitacion(Long idReservation, Long idHabitacion, int cantidad)
+  public Reservation_Habitacion(int idReservation, int idHabitacion, int cantidad)
   {
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;
     this.cantidad = cantidad;
   }
 
-  public Long getIdReservation() {
+  public int getIdReservation() {
     return idReservation;
   }
 
-  public void setIdReservation(Long idReservation) {
+  public void setIdReservation(int idReservation) {
     this.idReservation = idReservation;
   }
 
-  public Long getIdHabitacion() {
+  public int getIdHabitacion() {
     return idHabitacion;
   }
 
-  public void setIdHabitacion(Long idHabitacion) {
+  public void setIdHabitacion(int idHabitacion) {
     this.idHabitacion = idHabitacion;
   }
 

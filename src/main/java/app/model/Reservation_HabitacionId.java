@@ -1,38 +1,39 @@
 package app.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
 import javax.persistence.Column;
 
 
 public class Reservation_HabitacionId implements Serializable {
+
   private static final long serialVersionUID = 5787285946857659475L;
   @Column(name = "idReservation")
-  private Long idReservation;
+
+  private int idReservation;
 
   @Column(name = "idHabitacion")
-  private Long idHabitacion;
+
+  private int idHabitacion;
 
   public Reservation_HabitacionId() {
   }
 
-  public Reservation_HabitacionId(Long idReservation, Long idHabitacion) {
+  public Reservation_HabitacionId(int idReservation, int idHabitacion) {
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;
   }
 
-  public Long getIdReservation() {
-    return idReservation;
-  }
-
-  public void setIdReservation(Long idReservation) {
+  public void setIdReservation(int idReservation) {
     this.idReservation = idReservation;
   }
 
-  public Long getIdHabitacion() {
+  public int getIdHabitacion() {
     return idHabitacion;
   }
 
-  public void setIdHabitacion(Long idHabitacion) {
+  public void setIdHabitacion(int idHabitacion) {
     this.idHabitacion = idHabitacion;
   }
 }

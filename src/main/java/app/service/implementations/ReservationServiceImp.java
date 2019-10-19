@@ -19,7 +19,8 @@ public class ReservationServiceImp implements ReservationService {
   }
 
   @Override
-  public ResponseEntity addReservation(Reservation reservation) {
+  public ResponseEntity addReservation(Reservation reservation, int idHabitacion, int quantity) {
+    reservation.addhabitations(idHabitacion, quantity);
     reservationRepository.save(reservation);
     return ResponseEntity.status(200).build();
   }

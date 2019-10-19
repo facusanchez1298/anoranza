@@ -22,7 +22,9 @@ public class ReservationController {
 
   @PostMapping("/addReservation")
   public ResponseEntity addReservation(@RequestBody Reservation reservation){
-    return reservationRepository.addReservation(reservation);
+    int idHabitacion = 1;
+    int quantity = 2;
+    return reservationRepository.addReservation(reservation, idHabitacion, quantity);
   }
 
   @GetMapping("/allReservations")

@@ -1,9 +1,11 @@
 package app.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -36,13 +38,28 @@ public class Reservation {
     name = "habitaciones_reservations",
     joinColumns = @JoinColumn(name = "reservation_id"),
     inverseJoinColumns = @JoinColumn(name = "habitacion_id"))*/
-  @OneToMany(fetch = FetchType.EAGER, mappedBy = "habitacion")
+  @OneToMany(
+    fetch = FetchType.EAGER,
+    mappedBy = "habitacion",
+    cascade = CascadeType.ALL,
+    orphanRemoval = true)
+  @JsonManagedReference
   private List<Reservation_Habitacion> habitaciones = new ArrayList<>();
 
   public Reservation() {
   }
 
+  public Reservation(int id, @NotNull User user,
+    @NotNull Date ingreso, @NotNull Date salida) {
+    this.id = id;
+    this.user = user;
+    this.ingreso = ingreso;
+    this.salida = salida;
+  }
 
+  public void addhabitations(int habitationId, int quantity){
+    habitaciones.add(new Reservation_Habitacion(habitationId, this.id, quantity ));
+  }
 
   public int getId() {
     return id;
