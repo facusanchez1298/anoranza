@@ -40,12 +40,12 @@ public class ReservationServiceImp implements ReservationService {
   }
 
   private boolean isFree(List<Reservation> lista, int id_habitacion){
-    for (int i = 0; i <lista.size(); i++) {
+   /* for (int i = 0; i <lista.size(); i++) {
       List<Habitacion> habitaciones = lista.get(i).getHabitaciones();
       for (Habitacion habitacion: habitaciones) {
         if(habitacion.getId() == id_habitacion) return true;
       }
-    }
+    }*/ //todo arreglar este metodo
     return true;
   }
 

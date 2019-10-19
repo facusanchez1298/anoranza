@@ -3,17 +3,17 @@ package app.model;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
-public class Habitacion {
+public class Habitacion{
   @Id
   private int id;
   private int capacidad;
   private String tipo;
   private String description;
-  @ManyToMany(mappedBy = "habitaciones")
-  private List<Reservation> reservation;
+  @OneToMany(mappedBy = "habitacion")
+  private List<Reservation_Habitacion> reservation;
 
   public Habitacion() {
   }
@@ -50,11 +50,11 @@ public class Habitacion {
     this.description = description;
   }
 
-  public List<Reservation> getReservation() {
+  public List<Reservation_Habitacion> getReservation() {
     return reservation;
   }
 
-  public void setReservation(List<Reservation> reservation) {
+  public void setReservation(List<Reservation_Habitacion> reservation) {
     this.reservation = reservation;
   }
 }
