@@ -23,10 +23,8 @@ public class MailComponent  implements EmailService {
       message.setTo(to);
       message.setSubject(subject);
       message.setText(text);
-      //emailSender.send(message);
+      emailSender.send(message);
     }
-
-
 
   @Override
   public void sendMessageWithAttachment(

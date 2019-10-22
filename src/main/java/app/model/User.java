@@ -27,14 +27,14 @@ public class User {
   @Column(name = "name")
   @NotBlank
   private String name;
-  @Column(name = "last_Name")
-  private String lastName;
   @Column(name = "sur_name")
   @NotBlank
   private String surName;
-  @Column(name = "age")
+  @Column(name = "direccion")
+  private String direccion;
+  @Column(name = "telefono")
   @NotNull
-  private Integer age;
+  private Integer telefono;
   @Column(name = "address")
   @NotBlank
   private String address;
@@ -50,18 +50,20 @@ public class User {
 
   }
 
-  public User(int id, @NotBlank String userName,
+  public User(
+    @NotBlank String userName,
     @NotBlank String password,
-    @NotBlank String name, String lastName,
-    @NotBlank String surName, @NotNull Integer age,
+    @NotBlank String name,
+    @NotBlank String direccion,
+    @NotBlank String surName,
+    @NotNull Integer telefono,
     @NotBlank String address) {
-    this.id = id;
     this.userName = userName;
     this.password = password;
     this.name = name;
-    this.lastName = lastName;
+    this.direccion = direccion;
     this.surName = surName;
-    this.age = age;
+    this.telefono = telefono;
     this.address = address;
   }
 
@@ -97,12 +99,12 @@ public class User {
     this.name = name;
   }
 
-  public String getLastName() {
-    return lastName;
+  public String getDireccion() {
+    return direccion;
   }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
+  public void setDireccion(String direccion) {
+    this.direccion = direccion;
   }
 
   public String getSurName() {
@@ -113,12 +115,12 @@ public class User {
     this.surName = surName;
   }
 
-  public Integer getAge() {
-    return age;
+  public Integer getTelefono() {
+    return telefono;
   }
 
-  public void setAge(Integer age) {
-    this.age = age;
+  public void setTelefono(Integer telefono) {
+    this.telefono = telefono;
   }
 
   public String getAddress() {
