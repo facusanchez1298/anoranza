@@ -45,4 +45,9 @@ public class FrontPageController {
   public String getContacto(){
     return "contacto";
   }
+
+  @GetMapping("/inicioSesion")
+  public String getSesion(){
+    return "inicioSesion";
+  }
 }
