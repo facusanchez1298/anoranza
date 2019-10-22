@@ -33,11 +33,6 @@ public class Reservation {
   @NotNull
   @Temporal(TemporalType.DATE)
   private Date salida;
- /* @ManyToMany
-  @JoinTable(
-    name = "habitaciones_reservations",
-    joinColumns = @JoinColumn(name = "reservation_id"),
-    inverseJoinColumns = @JoinColumn(name = "habitacion_id"))*/
   @OneToMany(
     fetch = FetchType.EAGER,
     mappedBy = "habitacion",
@@ -49,10 +44,8 @@ public class Reservation {
   public Reservation() {
   }
 
-  public Reservation(int id, @NotNull User user,
-    @NotNull Date ingreso, @NotNull Date salida) {
+  public Reservation(int id, @NotNull Date ingreso, @NotNull Date salida) {
     this.id = id;
-    this.user = user;
     this.ingreso = ingreso;
     this.salida = salida;
   }

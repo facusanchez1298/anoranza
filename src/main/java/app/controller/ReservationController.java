@@ -21,9 +21,7 @@ public class ReservationController {
   }
 
   @PostMapping("/addReservation")
-  public ResponseEntity addReservation(@RequestBody Reservation reservation){
-    int idHabitacion = 1;
-    int quantity = 2;
+  public ResponseEntity addReservation(@RequestBody Reservation reservation, int idHabitacion, int quantity){
     return reservationRepository.addReservation(reservation, idHabitacion, quantity);
   }
 

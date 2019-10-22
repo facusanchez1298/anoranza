@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5aa0349a-213f-428c-af89-3f39807fd472" name="Default Changelist" comment="" />
+    <list default="true" id="5aa0349a-213f-428c-af89-3f39807fd472" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/añoranzas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/añoranzas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/inicioSesion.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/inicioSesion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/ApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FacturaFinalFinal.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/FrontPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/FrontPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/UserRecived.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/model/UserRecived.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/InvoiceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/StorageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/UserServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/service/implementations/UserServicesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/images/leaf_banner_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contactoAnoranza.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/contactoAnoranza.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/reserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/reserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/actividades.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/actividades.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/reserva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/reserva.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/ApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/app/ApplicationTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

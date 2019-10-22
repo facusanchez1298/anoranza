@@ -11,21 +11,18 @@ import app.service.interfaces.UserServices;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserServicesImp implements UserServices {
   private final UserRepository dbUser;
   private final ExceptionController controller;
-  private final BCryptPasswordEncoder encoder;
   private final UserRecivedRepository userRecivedRepository;
 
   public UserServicesImp(UserRepository dbUser, ExceptionController controller,
-    BCryptPasswordEncoder encoder, UserRecivedRepository userRecivedRepository) {
+     UserRecivedRepository userRecivedRepository) {
     this.dbUser = dbUser;
     this.controller = controller;
-    this.encoder = encoder;
     this.userRecivedRepository = userRecivedRepository;
   }
   /**
@@ -37,7 +34,6 @@ public class UserServicesImp implements UserServices {
   public String SignUp(User user) {
     if(user == null)
       throw new UserNullExeption("the user entered is not valid");
-    user.setPassword(encoder.encode(user.getPassword()));
     dbUser.save(user);
     saveLikeUserRecived(user);
     return String.valueOf(user.getId());
