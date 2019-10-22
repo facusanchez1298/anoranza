@@ -50,4 +50,9 @@ public class FrontPageController {
   public String getSesion(){
     return "inicioSesion";
   }
+
+  @GetMapping("/registro")
+  public String getRegistro(){
+    return "registro";
+  }
 }
