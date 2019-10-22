@@ -11,4 +11,6 @@ public interface ReservationService {
   List<Reservation> getAll();
 
   public boolean isFree(int id_habitacion, Date ingreso, Date salida);
+
+  Reservation getById(int id);
 }

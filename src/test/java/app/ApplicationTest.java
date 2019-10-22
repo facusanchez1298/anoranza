@@ -4,6 +4,7 @@ import app.model.User;
 import app.model.UserRecived;
 import app.repository.UserRecivedRepository;
 import app.repository.UserRepository;
+import app.service.InvoiceService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,15 @@ public class ApplicationTest {
 
     @Autowired
     private BCryptPasswordEncoder encoder;
+
+    @Autowired
+    private InvoiceService invoiceService;
+
+    @Test
+    public void createHtmlTest() throws Exception{
+        byte [] ret = invoiceService.generateInvoiceFor(1);
+        assertTrue(ret.getClass().isArray());
+    }
 
     @Test
     public void createUserTest(){

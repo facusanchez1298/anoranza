@@ -40,6 +40,13 @@ public class ReservationServiceImp implements ReservationService {
     return free;
   }
 
+  @Override
+  public Reservation getById(int id) {
+
+    return reservationRepository.getOne(id);
+
+  }
+
   private boolean isFree(List<Reservation> lista, int id_habitacion){
    /* for (int i = 0; i <lista.size(); i++) {
       List<Habitacion> habitaciones = lista.get(i).getHabitaciones();
