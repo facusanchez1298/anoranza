@@ -1,0 +1,212 @@
+
+
+.form{
+    background-color: aliceblue;
+    margin: 25% 3%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.form label{
+    font-size: 18px;
+}
+
+.form h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+/*FECHAS*/
+
+.fechas label{
+    margin-bottom: 3%;
+}
+
+.fechas{
+    padding: 3%;
+    border: 1px solid gray;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton{
+    margin: 10px 0px;
+}
+
+.entrada,.salida{
+
+    height: 30px;
+
+}
+
+.entrada{
+    margin-bottom: 12px;
+}
+
+
+#fEntrada, #fSalida{
+
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+
+}
+
+/*HABITACIONES*/
+
+.habitaciones{
+    margin-top: 5%;
+    padding: 3%;
+    border: 1px solid gray;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.habi{
+    margin-bottom: 12px;
+}
+
+.habi,.cant{
+    height: 30px;
+    font-size: 18px;
+
+}
+
+.boton{
+
+    background: none;
+    height: 30px;
+    font-size: 19px;
+    border: 1px solid darkseagreen;
+}
+
+
+/*PAGO*/
+
+.pago{
+
+    margin-top: 5%;
+    padding: 3%;
+    border: 1px solid gray;
+
+}
+
+.datos{
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 3%;
+    width: 100%;
+
+
+}
+
+.nombre,.tarjeta,.vencimiento,.cod{
+
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 8px;
+}
+
+/*BOTON*/
+
+.confirmar{
+    width: 100%;
+
+}
+
+.botonReserva{
+    width: 100%;
+    margin: 5% 0%;
+    height: 40px;
+    border: 2px solid darkseagreen;
+    font-size: 25px;
+    background-color: darkseagreen
+}
+
+/*INPUT*/
+
+input:valid{
+
+    border: 1px solid darkseagreen;
+
+}
+
+input:invalid{
+
+    border: 1px solid red;
+
+}
+
+@media (min-width: 800px){
+
+    .form{
+        width: 80%;
+        margin: 10%;
+
+    }
+
+}
+
+
+
+
+
+/*#reserva .contenedor{
+    background-color: whitesmoke;
+    margin-top: 130px;
+    
+    width: 65%;
+    text-align: left;
+    
+    
+    border-radius: 14px;
+    border: 7px solid black;
+    
+    
+    padding: 1px;
+    padding-top: 20px;
+    
+    
+}
+
+.entrada,.salida{
+    margin-left: 18%;
+    margin-bottom: 15px;
+}
+
+.fsalida,.fentrada{
+    
+    width:  100%;
+    height: 30px;
+    
+}
+
+.b{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.boton{
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid darkolivegreen;
+    font-size: 15px;
+    
+}
+
+.boton:hover{
+    background: rgba(11,51,0,0.4);
+    
+}*/

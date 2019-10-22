@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Añoranzas Chaqueñas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--        <link rel="stylesheet" href="login.css">-->
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <!--        <link rel="stylesheet" href="reserva.css">-->
+
+    <!--        <script type="text/javascript" src="formulario.js"></script>-->
+
+    <script type="application/javascript" src="registro.js"></script>
+
+
+</head>
+<body>
+<header>
+
+    <div class="contenedor">
+
+        <h1>Añoranzas Chaqueñas</h1>
+
+        <input type="checkbox" id = "menu-bar">
+        <label class = "icon-menu" for = "menu-bar"></label>
+
+        <nav class = "menu">
+            <a href="/">Inicio</a>
+            <a href="/reserva">Reservas</a>
+            <a href="/actividades">Actividades</a>
+            <a href="/instalaciones">Instalaciones</a>
+            <a href="/contacto">Contacto</a>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+
+
+    <!--            <form class="form" onsubmit="ingresar()" method="post">-->
+
+    <form class="form" method="post" action="http://example.com">
+
+        <h1>Registrate</h1>
+
+        <div class="datos">
+
+            <div class="nombre">
+
+                <input type="text" id="nom" required placeholder="Nombre" name="nombre">
+
+            </div>
+
+            <div class="apellido">
+
+                <input type="text" id="ape" required placeholder="Apellido" name="apellido">
+
+            </div>
+
+            <div class="direccion">
+
+                <input type="text" id="dir" required placeholder="Dirección" name="direccion" >
+
+            </div>
+
+            <div class="telefono">
+
+                <input type="tel" required placeholder="Teléfono" id="tel" name="telefono">
+
+            </div>
+
+            <div class="mail">
+
+                <input type="email" id="mail" required placeholder="E-mail" name="mail">
+
+            </div>
+
+
+            <div class="pass">
+
+                <input type="password" id="contra" required placeholder="Contraseña" name="password">
+
+            </div>
+
+            <div class="registrar">
+
+                <input type="submit" id="registrar" value="Registrarse">
+
+            </div>
+
+            <div class="volver">
+
+                <a href="login.html" class="atras">Volver</a>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+
+    <div class = "contenedor">
+
+        <p><a href="https://booted-rifles.000webhostapp.com/index.html.html">Decodex</a>. Todos los derechos reservados &reg; 2019.</p>
+
+        <div class="sociales">
+
+            <!--                   <a class="icon-twitter" href="#"></a>-->
+            <a class="icon-instagram" href="https://www.instagram.com/decodex_oficial/"></a>
+            <a class="icon-facebook-squared" href="https://www.facebook.com/Decodex-106447150711317/"></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

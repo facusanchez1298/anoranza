@@ -1,0 +1,124 @@
+body{
+    background: linear-gradient(to right, #5a3f37, #2c7744);
+}
+
+.actividades{
+    margin: 15% 10%;
+    height: auto;
+    width: 80%;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.titulo{
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    
+}
+
+h1{
+    font-size: 40px;;
+    
+}
+
+.h1{
+    font-size: 25px;
+}
+
+h3{
+    padding-top: 15px;
+    
+}
+
+p{
+    margin: 7px;
+    text-align: justify;
+    
+}
+
+.cabalgata, .paseo, .museo, .proveeduria, .pesca{
+    display: inline-flex;
+    border: 3px solid darkolivegreen;
+    border-radius: 10px;
+    margin: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    align-items: center;
+    
+}
+
+ .posada{
+    display: block;
+    border: 3px solid darkolivegreen;
+    border-radius: 10px;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+} 
+
+.cabalgata img,.paseo img, .museo img, .pesca img, .proveeduria img{
+    
+    height: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    max-height: 100%;
+    
+}
+
+.posada img{
+    height: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    
+}
+
+.posada-img{
+    display: flex;
+    justify-content: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media  (max-width: 900px){
+    
+    .cabalgata, .paseo, .museo, .proveeduria, .pesca, .posada{
+        display: block;
+        height: auto;
+        width: 80%;
+        
+        
+    }
+    .cabalgata img,.paseo img, .museo img, .pesca img, .proveeduria img, .posada img{
+        
+        height: auto;
+        width: 80%;
+        
+    }
+
+}
+
+/*
+@media (max-width: 600px){
+    
+    .cabalgata, .paseo, .museo, .proveeduria, .pesca, .posada{
+        
+        height: auto;
+        width: 80%;
+    }
+    
+    
+    .cabalgata img,.paseo img, .museo img, .pesca img, .proveeduria img, .posada img{
+        
+        height: auto;
+        width: 80%;
+
+    }
+    
+}
+*/

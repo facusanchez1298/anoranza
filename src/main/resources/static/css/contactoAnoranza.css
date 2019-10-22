@@ -1,0 +1,97 @@
+.contacto{
+    background: linear-gradient(to right, #5a3f37, #2c7744);
+}
+
+.datos{
+    margin: 10% 15%;
+    padding: 55px 30px;
+    /*    margin-top: 50px;*/
+    display: block;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.mail, .nombre, .telefono{
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+
+    font-size: 20px;
+    outline: none;
+}
+
+.nombre{
+    margin-top: 40px;
+}
+
+
+.texto{
+    font: 400 13.3333px Arial;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    /*    border-radius: 25px;*/
+    resize: none;
+    outline: none;
+}
+
+.enviar, .boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton{
+    margin-top: 15px;
+    font-size: 16px;
+
+    padding: 8px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid gray ;
+    background-color: transparent;
+    cursor: pointer;
+    /*    border-radius: 25px;*/
+    width: 100%;
+    justify-content: center;
+
+}
+
+.boton:hover{
+
+    background-color:rgba(86,83,206,0.3);
+
+}
+
+@media (max-width: 400px){
+
+    .datos{
+        margin: 15% 7%;
+    }
+
+}
+
+input:valid{
+
+    border: 1px solid darkseagreen;
+
+}
+
+input:invalid{
+
+    border: 1px solid red;
+
+}
+
+textarea:valid{
+
+    border: 1px solid darkseagreen;
+}
+
+textarea:invalid{
+
+    border: 1px solid red;
+
+}

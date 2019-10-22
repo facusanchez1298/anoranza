@@ -1,0 +1,8 @@
+app\service\UserService.class
+app\controller\FrontPageController.class
+app\controller\UserController.class
+app\controller\IndexController.class
+app\repository\UserRepository.class
+app\service\impl\UserServiceImpl.class
+app\Application.class
+app\model\User.class
