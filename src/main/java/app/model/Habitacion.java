@@ -19,7 +19,7 @@ public class Habitacion{
     cascade = CascadeType.ALL,
     orphanRemoval = true)
   @JsonManagedReference
-  private List<Reservation_Habitacion> reservation;
+  private List<reservationHabitacion> reservation;
 
   public Habitacion() {
   }
@@ -56,11 +56,11 @@ public class Habitacion{
     this.description = description;
   }
 
-  public List<Reservation_Habitacion> getReservation() {
+  public List<reservationHabitacion> getReservation() {
     return reservation;
   }
 
-  public void setReservation(List<Reservation_Habitacion> reservation) {
+  public void setReservation(List<reservationHabitacion> reservation) {
     this.reservation = reservation;
   }
 }

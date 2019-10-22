@@ -6,7 +6,7 @@ import java.io.Serializable;
 import javax.persistence.Column;
 
 
-public class Reservation_HabitacionId implements Serializable {
+public class reservationHabitacionId implements Serializable {
 
   private static final long serialVersionUID = 5787285946857659475L;
   @Column(name = "idReservation")
@@ -17,10 +17,10 @@ public class Reservation_HabitacionId implements Serializable {
 
   private int idHabitacion;
 
-  public Reservation_HabitacionId() {
+  public reservationHabitacionId() {
   }
 
-  public Reservation_HabitacionId(int idReservation, int idHabitacion) {
+  public reservationHabitacionId(int idReservation, int idHabitacion) {
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;
   }

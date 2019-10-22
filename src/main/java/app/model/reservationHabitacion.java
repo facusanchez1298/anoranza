@@ -11,8 +11,8 @@ import javax.persistence.Id;
 
 @Entity(name = "reservation_Habitacion")
 @Table(name = "revercation_habitacion")
-@IdClass(Reservation_HabitacionId.class)
-public class Reservation_Habitacion {
+@IdClass(reservationHabitacionId.class)
+public class reservationHabitacion {
   @Id
   private int idReservation;
 
@@ -31,10 +31,10 @@ public class Reservation_Habitacion {
   @JsonBackReference
   private Habitacion habitacion;
 
-  public Reservation_Habitacion() {
+  public reservationHabitacion() {
   }
 
-  public Reservation_Habitacion(int idReservation, int idHabitacion, int cantidad)
+  public reservationHabitacion(int idReservation, int idHabitacion, int cantidad)
   {
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;

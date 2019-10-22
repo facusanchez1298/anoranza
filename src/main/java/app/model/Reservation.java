@@ -44,7 +44,7 @@ public class Reservation {
     cascade = CascadeType.ALL,
     orphanRemoval = true)
   @JsonManagedReference
-  private List<Reservation_Habitacion> habitaciones = new ArrayList<>();
+  private List<reservationHabitacion> habitaciones = new ArrayList<>();
 
   public Reservation() {
   }
@@ -58,7 +58,7 @@ public class Reservation {
   }
 
   public void addhabitations(int habitationId, int quantity){
-    habitaciones.add(new Reservation_Habitacion(habitationId, this.id, quantity ));
+    habitaciones.add(new reservationHabitacion(habitationId, this.id, quantity ));
   }
 
   public int getId() {
@@ -93,11 +93,11 @@ public class Reservation {
     this.salida = salida;
   }
 
-  public List<Reservation_Habitacion> getHabitaciones() {
+  public List<reservationHabitacion> getHabitaciones() {
     return habitaciones;
   }
 
-  public void setHabitaciones(List<Reservation_Habitacion> habitaciones) {
+  public void setHabitaciones(List<reservationHabitacion> habitaciones) {
     this.habitaciones = habitaciones;
   }
 }
