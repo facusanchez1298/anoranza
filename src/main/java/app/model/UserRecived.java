@@ -1,6 +1,7 @@
 package app.model;
 
 
+import javax.persistence.Column;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Entity;
@@ -11,7 +12,7 @@ import javax.persistence.Id;
 @Entity
 public class UserRecived extends AbstractPersistable<Long> {
 
-
+    @Column(unique = true)
     private String userName;
     private String password;
 

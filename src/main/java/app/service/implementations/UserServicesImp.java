@@ -4,22 +4,29 @@ package app.service.implementations;
 import app.excepciones.Classes.UserNullExeption;
 import app.excepciones.ExceptionController;
 import app.model.User;
+import app.model.UserRecived;
+import app.repository.UserRecivedRepository;
 import app.repository.UserRepository;
 import app.service.interfaces.UserServices;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserServicesImp implements UserServices {
   private final UserRepository dbUser;
   private final ExceptionController controller;
+  private final BCryptPasswordEncoder encoder;
+  private final UserRecivedRepository userRecivedRepository;
 
-
-  public UserServicesImp(UserRepository dbUser, ExceptionController controller) {
+  public UserServicesImp(UserRepository dbUser, ExceptionController controller,
+    BCryptPasswordEncoder encoder, UserRecivedRepository userRecivedRepository) {
     this.dbUser = dbUser;
     this.controller = controller;
+    this.encoder = encoder;
+    this.userRecivedRepository = userRecivedRepository;
   }
   /**
    * save a user in the data base
@@ -30,8 +37,17 @@ public class UserServicesImp implements UserServices {
   public String SignUp(User user) {
     if(user == null)
       throw new UserNullExeption("the user entered is not valid");
+    user.setPassword(encoder.encode(user.getPassword()));
     dbUser.save(user);
+    saveLikeUserRecived(user);
     return String.valueOf(user.getId());
+  }
+
+  private void saveLikeUserRecived(User user){
+    UserRecived userRecived = new UserRecived();
+    userRecived.setUserName(user.getUserName());
+    userRecived.setPassword(user.getPassword());
+    userRecivedRepository.save(userRecived);
   }
   /**
    * find a user by him id
