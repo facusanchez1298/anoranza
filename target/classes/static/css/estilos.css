@@ -168,7 +168,7 @@ footer .contenedor{
 }
 
 
-@media (max-width: 400){
+@media (max-width: 400px){
     
     footer .contenedor{
         text-align: center;
