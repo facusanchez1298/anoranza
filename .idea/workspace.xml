@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aa0349a-213f-428c-af89-3f39807fd472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/añoranzas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/añoranzas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/FrontPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/ReservationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/SendMailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/excepciones/Classes/UnauthorizerUserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/excepciones/Classes/UserNullExeption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/excepciones/ExceptionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Habitacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/model/UserRecived.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/model/reservationHabitacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/model/reservationHabitacionId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/ReservationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/UserRecivedRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/MailComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/MailServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/ReservationServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/UserRecivedServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/UserServicesImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/EmailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/MailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/ReservationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/UserRecivedService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/UserServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/añoranzas.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,15 +43,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571190733805" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="app.service.interfaces" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
@@ -99,10 +66,8 @@
       <recent name="app.repository" />
       <recent name="app.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\trabajos java\SpringPractice\src\main\resources" />
-      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
-      <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="app.service.interfaces" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,6 +159,9 @@
       <workItem from="1571768728267" duration="638000" />
       <workItem from="1571774622708" duration="2219000" />
       <workItem from="1571787620241" duration="1162000" />
+      <workItem from="1571797824466" duration="7000" />
+      <workItem from="1572098714084" duration="467000" />
+      <workItem from="1572099220497" duration="263000" />
     </task>
     <servers />
   </component>
