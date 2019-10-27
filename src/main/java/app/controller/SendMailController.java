@@ -3,7 +3,6 @@ import app.service.implementations.MailComponent;
 import app.service.implementations.MailServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -16,31 +15,14 @@ public class SendMailController {
 @Autowired
 private MailComponent mailComponent;
 
-  @GetMapping("/inicioMail")
-  public String index(){
-    return "send_mail_view";
-  }
-
  @PostMapping("/sendMail")
-  public String sendMail(@RequestParam("name") String name, @RequestParam("mail") String mail,
-    @RequestParam("subject") String subject, @RequestParam("body") String body) {
+  public String sendMail(@RequestParam("name") String name, @RequestParam("tel") String cel,@RequestParam("mail") String mail,
+    @RequestParam("consulta") String body) {
 
-    String message = body + "\n\n Datos de contacto: " + "\nNombre: " + name + "\nE-mail: " + mail;
-    mailService.sendMail("decodextech@gmail.com", mail, subject, message);
+      mailService.sendMail("decodextech@gmail.com", mail, "decodex", "gracias por comunicarte con nosotros, en breve un asesor se comunicara con usted. \n \t\t atte. DECODEX");
+    String message = body + "nombre = " + name + "\n telefono = " + cel + "\n mail " + mail;
+    mailService.sendMail("decodextech@gmail.com", "decodextech@gmail.com" , "comunicado", message);
 
-    return "send_mail_view";
+    return "/consulta";
   }
-
-  /*
-  @PostMapping("/send")
-  public String sendMail() {
-
-    try {
-      mailService.enviar();
-    } catch (MessagingException e) {
-      e.printStackTrace();
-    }
-
-    return "send_mail_view";
-  }*/
 }

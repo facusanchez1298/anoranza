@@ -5,7 +5,7 @@
 .datos{
     margin: 10% 15%;
     padding: 55px 30px;
-/*    margin-top: 50px;*/
+    /*    margin-top: 50px;*/
     display: block;
     background-color: aliceblue;
     border-radius: 5px;
@@ -32,7 +32,7 @@
     font-size: 20px;
     width: 100%;
     height: 200px;
-/*    border-radius: 25px;*/
+    /*    border-radius: 25px;*/
     resize: none;
     outline: none;
 }
@@ -45,7 +45,7 @@
 .boton{
     margin-top: 15px;
     font-size: 16px;
-    font: Arial;
+
     padding: 8px;
     font-size: 20px;
     color: black;
@@ -53,22 +53,45 @@
     border: 1px solid gray ;
     background-color: transparent;
     cursor: pointer;
-/*    border-radius: 25px;*/
+    /*    border-radius: 25px;*/
     width: 100%;
     justify-content: center;
 
 }
 
 .boton:hover{
-    
+
     background-color:rgba(86,83,206,0.3);
-    
+
 }
 
 @media (max-width: 400px){
-    
+
     .datos{
         margin: 15% 7%;
     }
-    
+
+}
+
+input:valid{
+
+    border: 1px solid darkseagreen;
+
+}
+
+input:invalid{
+
+    border: 1px solid red;
+
+}
+
+textarea:valid{
+
+    border: 1px solid darkseagreen;
+}
+
+textarea:invalid{
+
+    border: 1px solid red;
+
 }
