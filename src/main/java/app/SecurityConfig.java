@@ -49,11 +49,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests().antMatchers("/contacto").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/**").permitAll()
+                .authorizeRequests().antMatchers("/resources/**").permitAll()
                 .and()
                 .formLogin()
-                .loginPage("/login.html")
-                .loginProcessingUrl("/perform_login")
+                .loginPage("/login")
+                .permitAll()
+                .and()
+                .authorizeRequests().antMatchers("/**").permitAll()
                 .and()
                 .logout();
         ;
