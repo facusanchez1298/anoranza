@@ -60,6 +60,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .authorizeRequests().antMatchers("/**").permitAll()
                 .and()
                 .logout()
+                .and()
+                .csrf().disable()
+
 
         ;
 
