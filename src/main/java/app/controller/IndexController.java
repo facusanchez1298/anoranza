@@ -19,4 +19,7 @@ public class IndexController implements ErrorController {
         return "No capo, no existe";
     }
 
+    @RequestMapping("/login?error")
+    public String loginError() { return "Error al loguearse, maquina"; }
+
 }

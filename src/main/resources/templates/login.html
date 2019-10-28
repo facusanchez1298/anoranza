@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
 <head>
     <title>Añoranzas Chaqueñas</title>
     <meta charset="utf-8">
@@ -29,6 +29,7 @@
             <a href="/actividades">Actividades</a>
             <a href="/instalaciones">Instalaciones</a>
             <a href="/contacto">Contacto</a>
+            <a href="/logout">Cerrar sesion</a>
 
         </nav>
     </div>
@@ -40,7 +41,7 @@
 
     <!--            <form class="form" onsubmit="loguear()" method="get" action="#">-->
 
-    <form class="form" method="post" action="@{/inicioSesion}">
+    <form class="form" method="post" th:action="@{/login}">
 
         <div class="datos">
 
@@ -48,14 +49,14 @@
 
             <div class="mail">
 
-                <input type="text" id="nombre" required placeholder="Usuario" name="user_name">
+                <input type="text" id="username" required placeholder="Usuario" name="username">
 
             </div>
 
 
             <div class="pass">
 
-                <input type="password" id="contra" required placeholder="Contraseña" name="password">
+                <input type="password" id="password" required placeholder="Contraseña" name="password">
 
             </div>
 

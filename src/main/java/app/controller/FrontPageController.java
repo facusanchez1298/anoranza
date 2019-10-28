@@ -21,6 +21,11 @@ public class FrontPageController {
    */
   InvoiceService invoiceService;
 
+  @GetMapping("/login")
+  public String login() { return "login"; }
+
+
+
   @GetMapping("/")
   public String index() {
     return "inicio";

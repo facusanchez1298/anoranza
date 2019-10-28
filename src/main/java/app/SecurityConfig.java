@@ -45,19 +45,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .httpBasic()
                 .and()
-                .authorizeRequests().antMatchers("/reserva").authenticated()
+                    .authorizeRequests().antMatchers("/reserva").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/contacto").authenticated()
+                    .authorizeRequests().antMatchers("/contacto").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/resources/**").permitAll()
+                    .authorizeRequests().antMatchers("/resources/**").permitAll()
                 .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
+                    .formLogin()
+                        .loginPage("/login")
+                        .usernameParameter("username")
+                        .passwordParameter("password")
+                        .permitAll()
                 .and()
-                .authorizeRequests().antMatchers("/**").permitAll()
+                    .authorizeRequests().antMatchers("/**").permitAll()
                 .and()
-                .logout();
+                .logout()
+
         ;
 
     }
