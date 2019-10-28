@@ -1,7 +1,6 @@
 package app.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -21,11 +20,10 @@ import javax.validation.constraints.NotNull;
 public class Reservation {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private int id;
   @ManyToOne(fetch = FetchType.LAZY)
   @JsonBackReference
-  @NotNull
   private User user;
   @NotNull
   @Temporal(TemporalType.DATE)
@@ -33,32 +31,27 @@ public class Reservation {
   @NotNull
   @Temporal(TemporalType.DATE)
   private Date salida;
- /* @ManyToMany
-  @JoinTable(
-    name = "habitaciones_reservations",
-    joinColumns = @JoinColumn(name = "reservation_id"),
-    inverseJoinColumns = @JoinColumn(name = "habitacion_id"))*/
   @OneToMany(
     fetch = FetchType.EAGER,
     mappedBy = "habitacion",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  @JsonManagedReference
-  private List<reservationHabitacion> habitaciones = new ArrayList<>();
+  //@JsonManagedReference
+  private List<ReservationHabitacion> habitaciones = new ArrayList<>();
 
   public Reservation() {
   }
 
-  public Reservation(int id, @NotNull User user,
-    @NotNull Date ingreso, @NotNull Date salida) {
+  public Reservation(int id,
+    Date ingreso, Date salida, User user) {
     this.id = id;
     this.user = user;
     this.ingreso = ingreso;
     this.salida = salida;
   }
 
-  public void addhabitations(int habitationId, int quantity){
-    habitaciones.add(new reservationHabitacion(habitationId, this.id, quantity ));
+  public void addhabitations(int habitationId, int quantity, Reservation reservation, Habitacion habitacion){
+    habitaciones.add(new ReservationHabitacion(habitationId, this.id, quantity, reservation, habitacion));
   }
 
   public int getId() {
@@ -93,11 +86,11 @@ public class Reservation {
     this.salida = salida;
   }
 
-  public List<reservationHabitacion> getHabitaciones() {
+  public List<ReservationHabitacion> getHabitaciones() {
     return habitaciones;
   }
 
-  public void setHabitaciones(List<reservationHabitacion> habitaciones) {
+  public void setHabitaciones(List<ReservationHabitacion> habitaciones) {
     this.habitaciones = habitaciones;
   }
 }

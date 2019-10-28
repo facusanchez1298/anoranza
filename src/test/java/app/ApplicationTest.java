@@ -8,7 +8,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.assertTrue;
 
@@ -19,13 +18,13 @@ public class ApplicationTest {
     private UserRecivedRepository repo;
 
     @Autowired
-    private BCryptPasswordEncoder encoder;
+    //private BCryptPasswordEncoder encoder;
 
     @Test
     public void createUserTest(){
         UserRecived user = new UserRecived();
         user.setUserName("calvin");
-        user.setPassword(encoder.encode("prueba"));
+        //user.setPassword(encoder.encode("prueba"));
         UserRecived returned = repo.save(user);
 
         assertTrue(user.getUserName().equalsIgnoreCase(returned.getUserName()));

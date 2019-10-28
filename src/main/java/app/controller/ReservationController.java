@@ -3,6 +3,7 @@ package app.controller;
 import app.model.Reservation;
 import app.service.implementations.ReservationServiceImp;
 import app.service.interfaces.ReservationService;
+import java.time.Instant;
 import java.util.Date;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,8 +23,9 @@ public class ReservationController {
   }
 
   @PostMapping("/addReservation")
-  public ResponseEntity addReservation(@RequestBody Reservation reservation, int idHabitacion, int quantity){
-    return reservationRepository.addReservation(reservation, idHabitacion, quantity);
+  public ResponseEntity addReservation(@RequestBody Reservation reservation, @RequestParam(value = "habitacion") int idHabitacion,
+     @RequestParam(value = "cantidad") int quantity, @RequestParam(value = "userId") int userId){
+    return reservationRepository.addReservation(reservation, idHabitacion, quantity, userId);
   }
 
   @GetMapping("/allReservations")
