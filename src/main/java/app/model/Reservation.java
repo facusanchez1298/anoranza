@@ -20,7 +20,7 @@ import javax.validation.constraints.NotNull;
 public class Reservation {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
   @ManyToOne(fetch = FetchType.LAZY)
   @JsonBackReference
@@ -42,16 +42,15 @@ public class Reservation {
   public Reservation() {
   }
 
-  public Reservation(int id,
-    Date ingreso, Date salida, User user) {
+  public Reservation(int id, Date ingreso, Date salida, User user) {
     this.id = id;
     this.user = user;
     this.ingreso = ingreso;
     this.salida = salida;
   }
 
-  public void addhabitations(int habitationId, int quantity, Reservation reservation, Habitacion habitacion){
-    habitaciones.add(new ReservationHabitacion(habitationId, this.id, quantity, reservation, habitacion));
+  public void addhabitations(int habitationId, int quantity){
+    habitaciones.add(new ReservationHabitacion(this.id, habitationId, quantity));
   }
 
   public int getId() {

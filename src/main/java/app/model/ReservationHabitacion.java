@@ -36,10 +36,8 @@ public class ReservationHabitacion {
   public ReservationHabitacion() {
   }
 
-  public ReservationHabitacion(int idReservation, int idHabitacion, int cantidad, Reservation reservation, Habitacion habitacion)
+  public ReservationHabitacion(int idReservation, int idHabitacion, int cantidad)
   {
-    this.reservation = reservation;
-    this.habitacion = habitacion;
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;
     this.cantidad = cantidad;

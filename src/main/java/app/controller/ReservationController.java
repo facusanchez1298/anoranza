@@ -1,5 +1,6 @@
 package app.controller;
 
+import app.model.EnterDataReservation;
 import app.model.Reservation;
 import app.service.implementations.ReservationServiceImp;
 import app.service.interfaces.ReservationService;
@@ -23,9 +24,9 @@ public class ReservationController {
   }
 
   @PostMapping("/addReservation")
-  public ResponseEntity addReservation(@RequestBody Reservation reservation, @RequestParam(value = "habitacion") int idHabitacion,
-     @RequestParam(value = "cantidad") int quantity, @RequestParam(value = "userId") int userId){
-    return reservationRepository.addReservation(reservation, idHabitacion, quantity, userId);
+  public ResponseEntity addReservation(@RequestBody EnterDataReservation reservation){
+    return reservationRepository.addReservation(reservation.getReservation(),
+      reservation.getIdHabitacion(), reservation.getQuantity(), reservation.getUserId());
   }
 
   @GetMapping("/allReservations")

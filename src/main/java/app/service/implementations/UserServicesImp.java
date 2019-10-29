@@ -59,7 +59,7 @@ public class UserServicesImp implements UserServices {
   public User findById(int id) {
     Optional<User> user = dbUser.findById(id);
     if (user.isPresent()) return user.get();
-    throw new UserNullExeption("the entered user id is not valid");
+      throw new UserNullExeption("the entered user id is not valid");
   }
   /**
    * return a user with the user name entered
