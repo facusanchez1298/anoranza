@@ -1,10 +1,10 @@
 package app.controller;
 
-import app.model.EnterDataReservation;
+import app.model.para_metodos.EnterDataIsFree;
+import app.model.para_metodos.EnterDataReservation;
 import app.model.Reservation;
 import app.service.implementations.ReservationServiceImp;
 import app.service.interfaces.ReservationService;
-import java.time.Instant;
 import java.util.Date;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -34,8 +33,8 @@ public class ReservationController {
     return reservationRepository.getAll();
   }
 
-   @GetMapping("/isFree{id}")
-  public boolean isFree(@PathVariable(value = "id") Integer id_habitacion, @RequestBody Date ingreso, @RequestBody Date salida){
-    return reservationRepository.isFree(id_habitacion, ingreso, salida);
+   @GetMapping("/isFree")
+  public boolean isFree( @RequestBody EnterDataIsFree dataIsFree){
+    return reservationRepository.isFree(dataIsFree.getId_habitacion(),dataIsFree.getIngreso(),dataIsFree.getSalida());
   }
 }

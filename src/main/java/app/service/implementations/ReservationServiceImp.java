@@ -34,6 +34,7 @@ public class ReservationServiceImp implements ReservationService {
       throw new RuntimeException("no esta libre la habitacion en esta fecha");
     User user = userServices.findById(userId);
     reservation.setUser(user);
+    reservation = reservationRepository.save(reservation);
     reservation.addhabitations(idHabitacion, quantity);
     reservationRepository.save(reservation);
     return ResponseEntity.status(200).build();

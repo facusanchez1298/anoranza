@@ -1,4 +1,6 @@
-package app.model;
+package app.model.para_metodos;
+
+import app.model.Reservation;
 
 public class EnterDataReservation {
   private Reservation reservation;
