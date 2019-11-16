@@ -21,6 +21,7 @@ public class Habitacion{
   //@JsonManagedReference
   @JsonIgnore
   private List<ReservationHabitacion> reservation;
+  private float price;
 
   public Habitacion() {
   }
@@ -63,5 +64,13 @@ public class Habitacion{
 
   public void setReservation(List<ReservationHabitacion> reservation) {
     this.reservation = reservation;
+  }
+
+  public void setPrice(float price) {
+    this.price = price;
+  }
+
+  public float getPrice() {
+    return price;
   }
 }

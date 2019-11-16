@@ -36,8 +36,10 @@ public class ReservationHabitacion {
   public ReservationHabitacion() {
   }
 
-  public ReservationHabitacion(int idReservation, int idHabitacion, int cantidad)
+  public ReservationHabitacion(int idReservation, int idHabitacion, int cantidad, Reservation reservation, Habitacion habitacion)
   {
+    this.reservation = reservation;
+    this.habitacion = habitacion;
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;
     this.cantidad = cantidad;
@@ -81,5 +83,9 @@ public class ReservationHabitacion {
 
   public void setHabitacion(Habitacion habitacion) {
     this.habitacion = habitacion;
+  }
+
+  public float getPrecio() {
+    return this.habitacion.getPrice() * this.cantidad;
   }
 }

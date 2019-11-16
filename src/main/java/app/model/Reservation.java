@@ -38,6 +38,7 @@ public class Reservation {
     orphanRemoval = true)
   //@JsonManagedReference
   private List<ReservationHabitacion> habitaciones = new ArrayList<>();
+  private float price;
 
   public Reservation() {
   }
@@ -49,8 +50,17 @@ public class Reservation {
     this.salida = salida;
   }
 
-  public void addhabitations(int habitationId, int quantity){
-    habitaciones.add(new ReservationHabitacion(this.id, habitationId, quantity));
+  public void addhabitations(int habitationId, int quantity, Habitacion habitacion){
+    ReservationHabitacion reservationHabitacion = new ReservationHabitacion(this.id, habitationId, quantity, this, habitacion);
+    this.habitaciones.add(reservationHabitacion);
+    addPrice(getHabitaciones());
+  }
+
+  public void addPrice(List<ReservationHabitacion> reservationHabitacion){
+    this.price = 0;
+    for (int i = 0; i < reservationHabitacion.size(); i++) {
+      this.price += reservationHabitacion.get(i).getPrecio();
+    }
   }
 
   public int getId() {
@@ -91,5 +101,13 @@ public class Reservation {
 
   public void setHabitaciones(List<ReservationHabitacion> habitaciones) {
     this.habitaciones = habitaciones;
+  }
+
+  public float getPrice() {
+    return price;
+  }
+
+  public void setPrice(float price) {
+    this.price = price;
   }
 }

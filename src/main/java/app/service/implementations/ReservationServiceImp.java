@@ -33,9 +33,11 @@ public class ReservationServiceImp implements ReservationService {
     if(!isFree(idHabitacion, reservation.getIngreso(),reservation.getSalida()))
       throw new RuntimeException("no esta libre la habitacion en esta fecha");
     User user = userServices.findById(userId);
+    Habitacion habitacion = habitacionRepository.findById(idHabitacion).get();
     reservation.setUser(user);
     reservation = reservationRepository.save(reservation);
-    reservation.addhabitations(idHabitacion, quantity);
+    reservation.addhabitations(idHabitacion, quantity, habitacion );
+    reservation.addPrice(reservation.getHabitaciones());
     reservationRepository.save(reservation);
     return ResponseEntity.status(200).build();
   }
@@ -49,12 +51,20 @@ public class ReservationServiceImp implements ReservationService {
   public boolean isFree(int id_habitacion, Date ingreso, Date salida){
     List<Reservation> ingresos = reservationRepository.findAllByIngresoBetween(ingreso, salida);
     List<Reservation> salidas = reservationRepository.findAllBySalidaBetween(ingreso, salida);
-    boolean free = false;
-    free = isFree(ingresos, id_habitacion);
-    free = isFree(salidas, id_habitacion);
-    return free;
+    boolean freeIngreso = false, freeSalida  = false;
+    freeIngreso = isFree(ingresos, id_habitacion);
+    freeSalida = isFree(salidas, id_habitacion);
+    if (!freeIngreso || !freeSalida) return false;
+    return true;
   }
 
+  /**
+   * recorremos todas las reservaciones a ver si aparece la habitacion que queremos,
+   * si aparece es por que no esta libre
+   * @param lista
+   * @param id_habitacion
+   * @return
+   */
   private boolean isFree(List<Reservation> lista, int id_habitacion){
    for (int i = 0; i <lista.size(); i++) {
      List<ReservationHabitacion> habitaciones = lista.get(i).getHabitaciones();
