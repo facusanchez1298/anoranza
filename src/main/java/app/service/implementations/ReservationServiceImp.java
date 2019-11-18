@@ -58,6 +58,11 @@ public class ReservationServiceImp implements ReservationService {
     return true;
   }
 
+  @Override
+  public Reservation getById(int id) {
+    return null;
+  }
+
   /**
    * recorremos todas las reservaciones a ver si aparece la habitacion que queremos,
    * si aparece es por que no esta libre

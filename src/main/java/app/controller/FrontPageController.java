@@ -109,11 +109,11 @@ public class FrontPageController {
    */
   private JasperReport getCompiledFile() throws JRException {
 
-    File reportFile = new File("src\\main\\resources\\jasper\\FacturaConn.jrxml","src\\main\\resources\\jasper\\FacturaConn.jasper");
+    File reportFile = new File("src\\main\\resources\\jasper\\FinalFactura.jrxml","src\\main\\resources\\jasper\\FinalFactura.jasper");
     if (!reportFile.exists()) {
-      JasperCompileManager.compileReportToFile("src\\main\\resources\\jasper\\FacturaConn.jrxml","src\\main\\resources\\jasper\\FacturaConn.jasper");
+      JasperCompileManager.compileReportToFile("src\\main\\resources\\jasper\\FinalFactura.jrxml","src\\main\\resources\\jasper\\FinalFactura.jasper");
     }
-    JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("src\\main\\resources\\jasper\\FacturaConn.jasper");
+    JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("src\\main\\resources\\jasper\\FinalFactura.jasper");
 
     return jasperReport;
   }

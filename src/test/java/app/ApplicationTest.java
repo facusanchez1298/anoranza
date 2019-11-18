@@ -17,10 +17,9 @@ public class ApplicationTest {
     @Autowired
     private UserRecivedRepository repo;
 
-    @Autowired
-    //private BCryptPasswordEncoder encoder;
 
-    @Autowired
+
+
     private ReservationService reservationService;
 
     @Test
