@@ -2,7 +2,6 @@
 <!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FacturaFinalFinal" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e7eebaa4-068b-407f-bf7a-d4c2e72a1292">
 	<property name="com.jaspersoft.studio.data.sql.tables" value="cmVzZXJ2YXRpb24gLDE1LDE1LDUwYzFjYjNmLWM4OGUtNDI5YS1hMjY4LTk1ODI2MGRhMmVjZjs="/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="añoranzasChaqueñas"/>
 	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -11,10 +10,7 @@
 		<parameterDescription><![CDATA[id for searching db]]></parameterDescription>
 	</parameter>
 	<queryString language="SQL">
-		<![CDATA[SELECT reservation.id,
-	reservation.ingreso,
-	reservation.salida
-	FROM reservation]]>
+		<![CDATA[SELECT * FROM `reservation` WHERE `id` = $P{Idparam}]]>
 	</queryString>
 	<field name="id" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.label" value="id"/>

@@ -11,10 +11,7 @@
 		<parameterDescription><![CDATA[id for searching db]]></parameterDescription>
 	</parameter>
 	<queryString language="SQL">
-		<![CDATA[SELECT reservation.id,
-	reservation.ingreso,
-	reservation.salida
-	FROM reservation]]>
+		<![CDATA[SELECT * FROM `reservation` WHERE `id` = $P{Idparam}]]>
 	</queryString>
 	<field name="id" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.label" value="id"/>
@@ -48,7 +45,7 @@
 		<band splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="36" splitType="Stretch">
+		<band height="51" splitType="Stretch">
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="d69c6691-e92e-45c5-bf2d-c1dc15dabb91"/>
 				<graphicElement>

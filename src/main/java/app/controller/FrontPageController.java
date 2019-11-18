@@ -1,17 +1,15 @@
 package app.controller;
 
-import app.model.Reservation;
-import app.service.InvoiceService;
-import app.service.interfaces.ReservationService;
-import org.apache.commons.io.IOUtils;
-import org.springframework.http.MediaType;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.util.JRLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import javax.xml.soap.Text;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
+import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class FrontPageController {
@@ -19,7 +17,7 @@ public class FrontPageController {
    * muestra la pagina de inicio
    * @return el html de la pagina de inicio
    */
-  InvoiceService invoiceService;
+
 
   @GetMapping("/login")
   public String login() { return "login"; }
@@ -63,14 +61,66 @@ public class FrontPageController {
     return "contacto";
   }
 
-  @GetMapping(value = "/factura" , produces = MediaType.TEXT_HTML_VALUE)
-  public @ResponseBody byte[] getFactura() throws Exception {
+  /**
+   * Controlador, genera una factura usando la id de la reservacion que se le pase por el path
+   * ej localhost:8080/generatereport/2.
+   * @param id
+   * @return
+   */
+  @GetMapping(value = "/generatereport/{id}")
+  public String generateReport(@PathVariable String id) {
+    Connection conn = null;
 
-    byte[] factura = invoiceService.generateInvoiceFor(1);
-    return factura;
+    HashMap<String, Object> params = null;
+
+    JasperReport jasperReport = null;
+    try {
+      conn = DriverManager.getConnection("jdbc:mysql://db4free.net:3306/anoranza?serverTimezone=UTC", "decodex", "decodex1234");
+      params = new HashMap<>();
+      int idNumber = Integer.parseInt(id);
+
+      params.put("Idparam", new Integer(idNumber));
+
+      jasperReport = getCompiledFile();
+      generateReportPDF(params, jasperReport, conn);
+
+    } catch (SQLException | JRException e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        if (conn != null) {
+          conn.close();
+          conn = null;
+        }
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+    }
+
+    return "historia";
+
+
   }
 
+  /**
+   * to-do, mover estos metodos a una clase aparte, son utilizados para compilar el jrxml y generar el pdf.
+   * @return
+   * @throws JRException
+   */
+  private JasperReport getCompiledFile() throws JRException {
 
+    File reportFile = new File("src\\main\\resources\\jasper\\FacturaConn.jrxml","src\\main\\resources\\jasper\\FacturaConn.jasper");
+    if (!reportFile.exists()) {
+      JasperCompileManager.compileReportToFile("src\\main\\resources\\jasper\\FacturaConn.jrxml","src\\main\\resources\\jasper\\FacturaConn.jasper");
+    }
+    JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("src\\main\\resources\\jasper\\FacturaConn.jasper");
+
+    return jasperReport;
+  }
+  private void generateReportPDF (Map parameters, JasperReport jasperReport, Connection conn)throws JRException {
+    JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters,conn);
+    JasperExportManager.exportReportToPdfFile(jasperPrint,"src\\main\\resources\\jasper\\jasperOutput\\Factura.pdf");
+  }
 
 
 }
