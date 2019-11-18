@@ -1,5 +1,6 @@
 package app.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -33,8 +34,7 @@ public class User {
   @Column(name = "direccion")
   private String direccion;
   @Column(name = "telefono")
-  @NotNull
-  private Integer telefono;
+  private String telefono;
   @Column(name = "address")
   @NotBlank
   private String address;
@@ -44,6 +44,7 @@ public class User {
     orphanRemoval = true
   )
   @JsonManagedReference
+  //@JsonIgnore
   private List<Reservation> reservation;
 
   public User(){
@@ -51,13 +52,15 @@ public class User {
   }
 
   public User(
+    int id,
     @NotBlank String userName,
     @NotBlank String password,
     @NotBlank String name,
     @NotBlank String direccion,
     @NotBlank String surName,
-    @NotNull Integer telefono,
+    String telefono,
     @NotBlank String address) {
+    this.id = id;
     this.userName = userName;
     this.password = password;
     this.name = name;
@@ -115,11 +118,11 @@ public class User {
     this.surName = surName;
   }
 
-  public Integer getTelefono() {
+  public String getTelefono() {
     return telefono;
   }
 
-  public void setTelefono(Integer telefono) {
+  public void setTelefono(String telefono) {
     this.telefono = telefono;
   }
 

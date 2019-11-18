@@ -1,35 +1,25 @@
 package app.service;
 
-import app.excepciones.Classes.UserNullExeption;
-import app.model.User;
-import app.model.UserRecived;
 import app.repository.UserRecivedRepository;
-import app.repository.UserRepository;
-import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class UserService implements UserDetailsService {
+public class UserService{// implements UserDetailsService {
 
     @Autowired
     private UserRecivedRepository repo;
-
+  /*
 
     /**
      * Conexion a base de datos
      * @param userName
      * @return
      * @throws UsernameNotFoundException
-     */
+     *//*
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
       Optional<UserRecived> user = repo.findByUserName(userName);
@@ -42,6 +32,6 @@ public class UserService implements UserDetailsService {
         return userDetails;
       }
       throw new UserNullExeption("the entered user not exist");
-    }
+    }*/
 
 }
