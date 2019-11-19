@@ -1,8 +1,6 @@
 package app;
 
-import app.model.UserRecived;
 import app.service.UserService;
-import app.service.interfaces.UserRecivedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,6 +11,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
     @Autowired
     private UserService userDetailsService;
 
@@ -31,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * @param auth
      * @throws Exception
      */
-    @Override
+
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
         auth.userDetailsService(userDetailsService).passwordEncoder(bCrypt);
     }
@@ -45,14 +44,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .httpBasic()
                 .and()
-                .authorizeRequests().antMatchers("/reserva").authenticated()
+                    .authorizeRequests().antMatchers("/reserva").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/contacto").authenticated()
+                    .authorizeRequests().antMatchers("/contacto").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/**").permitAll()
+                    .authorizeRequests().antMatchers("/resources/**").permitAll()
                 .and()
-                .logout();
-        ;
+                    .formLogin()
+                        .loginPage("/login")
+                        .usernameParameter("username")
+                        .passwordParameter("password")
+                        .permitAll()
+                .and()
+                    .authorizeRequests().antMatchers("/**").permitAll()
+                .and()
+                .logout()
+                .and()
+                .csrf().disable();
 
     }
 }

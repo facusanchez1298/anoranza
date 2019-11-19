@@ -1,6 +1,7 @@
 package app.controller;
 import app.service.implementations.MailComponent;
 import app.service.implementations.MailServiceImp;
+import app.service.implementations.MailwithArch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,10 +13,7 @@ public class SendMailController {
   @Autowired
   private MailServiceImp mailService;
 
-@Autowired
-private MailComponent mailComponent;
-
- @PostMapping("/sendMail")
+  @PostMapping("/sendMail")
   public String sendMail(@RequestParam("name") String name, @RequestParam("tel") String cel,@RequestParam("mail") String mail,
     @RequestParam("consulta") String body) {
 
@@ -25,4 +23,6 @@ private MailComponent mailComponent;
 
     return "/consulta";
   }
+
+
 }

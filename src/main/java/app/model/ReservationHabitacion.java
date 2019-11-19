@@ -1,6 +1,6 @@
 package app.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Entity;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
@@ -11,8 +11,8 @@ import javax.persistence.Id;
 
 @Entity(name = "reservation_Habitacion")
 @Table(name = "revercation_habitacion")
-@IdClass(reservationHabitacionId.class)
-public class reservationHabitacion {
+@IdClass(ReservationHabitacionId.class)
+public class ReservationHabitacion {
   @Id
   private int idReservation;
 
@@ -23,19 +23,23 @@ public class reservationHabitacion {
 
   @ManyToOne
   @JoinColumn(name = "idReservation", referencedColumnName = "id", insertable = false, updatable = false)
-  @JsonBackReference
+ // @JsonBackReference
+  @JsonIgnore
   private Reservation reservation;
 
   @ManyToOne
   @JoinColumn(name = "idHabitacion", referencedColumnName = "id", insertable = false, updatable = false)
-  @JsonBackReference
+  //@JsonBackReference
+  @JsonIgnore
   private Habitacion habitacion;
 
-  public reservationHabitacion() {
+  public ReservationHabitacion() {
   }
 
-  public reservationHabitacion(int idReservation, int idHabitacion, int cantidad)
+  public ReservationHabitacion(int idReservation, int idHabitacion, int cantidad, Reservation reservation, Habitacion habitacion)
   {
+    this.reservation = reservation;
+    this.habitacion = habitacion;
     this.idReservation = idReservation;
     this.idHabitacion = idHabitacion;
     this.cantidad = cantidad;
@@ -79,5 +83,9 @@ public class reservationHabitacion {
 
   public void setHabitacion(Habitacion habitacion) {
     this.habitacion = habitacion;
+  }
+
+  public float getPrecio() {
+    return this.habitacion.getPrice() * this.cantidad;
   }
 }

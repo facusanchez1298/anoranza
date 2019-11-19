@@ -1,9 +1,9 @@
 package app;
 
-import app.model.User;
+import app.model.Reservation;
 import app.model.UserRecived;
 import app.repository.UserRecivedRepository;
-import app.repository.UserRepository;
+import app.service.interfaces.ReservationService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +18,17 @@ public class ApplicationTest {
     @Autowired
     private UserRecivedRepository repo;
 
-    @Autowired
     private BCryptPasswordEncoder encoder;
+
+    private ReservationService reservationService;
+
+    @Test
+    public void reservationTest() {
+        Reservation reservation = reservationService.getById(1);
+        assertTrue(reservation.getId() == 1);
+    }
+
+
 
     @Test
     public void createUserTest(){
