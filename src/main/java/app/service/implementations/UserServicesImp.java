@@ -4,30 +4,51 @@ package app.service.implementations;
 import app.excepciones.Classes.UserNullExeption;
 import app.excepciones.ExceptionController;
 import app.model.User;
-import app.model.UserRecived;
-import app.repository.UserRecivedRepository;
 import app.repository.UserRepository;
 import app.service.interfaces.UserServices;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServicesImp implements UserServices {
+@Order(1)
+public class UserServicesImp implements UserServices{
   private final UserRepository dbUser;
   private final ExceptionController controller;
-  //private final BCryptPasswordEncoder encoder;
-  private final UserRecivedRepository userRecivedRepository;
+  private final BCryptPasswordEncoder encoder;
 
-  @Autowired
-  public UserServicesImp(UserRepository dbUser, ExceptionController controller,
-    /*BCryptPasswordEncoder encoder,*/ UserRecivedRepository userRecivedRepository) {
+  public UserServicesImp(UserRepository dbUser, ExceptionController controller
+    , BCryptPasswordEncoder encoder) {
     this.dbUser = dbUser;
     this.controller = controller;
-    //this.encoder = encoder;
-    this.userRecivedRepository = userRecivedRepository;
+    this.encoder = encoder;
+  }
+  /**
+   * Conexion a base de datos
+   * @param userName
+   * @return
+   * @throws UsernameNotFoundException
+   */
+  @Override
+  public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+    Optional<User> user = dbUser.findByUserName(userName);
+
+    if(user.isPresent()){
+      List<GrantedAuthority> roles = new ArrayList<>();
+      roles.add(new SimpleGrantedAuthority("ADMIN"));
+      UserDetails userDetails =
+        new org.springframework.security.core.userdetails.User(user.get().getUserName(), user.get().getPassword(), roles);
+      return userDetails;
+    }
+    throw new UserNullExeption("the entered user not exist");
   }
   /**
    * save a user in the data base
@@ -40,15 +61,7 @@ public class UserServicesImp implements UserServices {
       throw new UserNullExeption("the user entered is not valid");
     //user.setPassword(encoder.encode(user.getPassword()));
     dbUser.save(user);
-    saveLikeUserRecived(user);
     return String.valueOf(user.getId());
-  }
-
-  private void saveLikeUserRecived(User user){
-    UserRecived userRecived = new UserRecived();
-    userRecived.setUserName(user.getUserName());
-    userRecived.setPassword(user.getPassword());
-    userRecivedRepository.save(userRecived);
   }
   /**
    * find a user by him id
