@@ -63,6 +63,15 @@ public class FrontPageController {
   }
 
   /**
+   * muestra la pagina de registro
+   * @return el html de la pagina de contacto
+   */
+  @GetMapping("/registro")
+  public String getRegistro(){
+    return "registro";
+  }
+
+  /**
    * Controlador, genera una factura usando la id de la reservacion que se le pase por el path
    * ej localhost:8080/generatereport/2.
    * @param id

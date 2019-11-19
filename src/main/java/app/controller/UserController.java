@@ -3,6 +3,7 @@ package app.controller;
 import app.model.User;
 import app.service.implementations.UserServicesImp;
 import app.service.interfaces.UserServices;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +36,7 @@ public class UserController {
      * @param user new user in the data base
      * @return the user id for authenticate
      */
-    @PostMapping(value = "/signUp")
+    @PostMapping(value = "/signUp", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String createNewUser(@RequestBody User user){
         return userService.SignUp(user);
     }
