@@ -1,8 +1,10 @@
 package app.service;
 
 import app.excepciones.Classes.UserNullExeption;
+import app.model.User;
 import app.model.UserRecived;
 import app.repository.UserRecivedRepository;
+import app.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,7 +21,7 @@ import java.util.Optional;
 public class UserService implements UserDetailsService {
 
     @Autowired
-    private UserRecivedRepository repo;
+    private UserRepository repo;
 
 
     /**
@@ -30,7 +32,7 @@ public class UserService implements UserDetailsService {
      */
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-      Optional<UserRecived> user = repo.findByUserName(userName);
+      Optional<User> user = repo.findByUserName(userName);
 
       if(user.isPresent()){
         List<GrantedAuthority> roles = new ArrayList<>();

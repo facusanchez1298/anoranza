@@ -9,10 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
-public class UserRecived extends AbstractPersistable<Long> {
 
-    @Column(unique = true)
+public class UserRecived{
     private String userName;
     private String password;
 
