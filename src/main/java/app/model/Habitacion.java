@@ -1,6 +1,8 @@
 package app.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -18,8 +20,8 @@ public class Habitacion{
     mappedBy = "habitacion",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  //@JsonManagedReference
-  @JsonIgnore
+  @JsonBackReference
+  //@JsonIgnore
   private List<ReservationHabitacion> reservation;
   private float price;
 

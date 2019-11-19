@@ -1,6 +1,7 @@
 package app.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -33,10 +34,10 @@ public class Reservation {
   private Date salida;
   @OneToMany(
     fetch = FetchType.EAGER,
-    mappedBy = "habitacion",
+    mappedBy = "reservation",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  //@JsonManagedReference
+  @JsonManagedReference
   private List<ReservationHabitacion> habitaciones = new ArrayList<>();
   private float price;
 
