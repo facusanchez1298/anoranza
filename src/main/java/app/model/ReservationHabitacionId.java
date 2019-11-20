@@ -1,7 +1,5 @@
 package app.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
 import javax.persistence.Column;
 

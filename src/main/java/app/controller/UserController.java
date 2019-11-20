@@ -1,16 +1,12 @@
 package app.controller;
 
 import app.model.User;
-import app.model.UserRecived;
 import app.service.implementations.UserServicesImp;
-import app.service.interfaces.UserRecivedService;
 import app.service.interfaces.UserServices;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class UserController {

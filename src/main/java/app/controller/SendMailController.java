@@ -1,7 +1,5 @@
 package app.controller;
-import app.service.implementations.MailComponent;
 import app.service.implementations.MailServiceImp;
-import app.service.implementations.MailwithArch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

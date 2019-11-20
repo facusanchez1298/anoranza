@@ -60,7 +60,7 @@ public class ReservationServiceImp implements ReservationService {
 
   @Override
   public Reservation getById(int id) {
-    return null;
+    return reservationRepository.findById(id).orElseThrow(RuntimeException::new);
   }
 
   /**
