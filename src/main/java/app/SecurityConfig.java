@@ -1,20 +1,22 @@
 package app;
 
-import app.model.UserRecived;
-import app.service.UserService;
-import app.service.interfaces.UserRecivedService;
+import app.service.implementations.UserServicesImp;
+import app.service.interfaces.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
+@Order(1)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
     @Autowired
-    private UserService userDetailsService;
+    private UserServicesImp userService;
 
     @Autowired
     private BCryptPasswordEncoder bCrypt;
@@ -31,9 +33,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * @param auth
      * @throws Exception
      */
-    @Override
+
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.userDetailsService(userDetailsService).passwordEncoder(bCrypt);
+        auth.userDetailsService(userService).passwordEncoder(bCrypt);
     }
 
     /**
@@ -45,14 +47,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .httpBasic()
                 .and()
-                .authorizeRequests().antMatchers("/reserva").authenticated()
+                    .authorizeRequests().antMatchers("/reserva").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/contacto").authenticated()
+                    .authorizeRequests().antMatchers("/contacto").authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/**").permitAll()
+                    .authorizeRequests().antMatchers("/resources/**").permitAll()
                 .and()
-                .logout();
-        ;
+                    .formLogin()
+                        .loginPage("/login")
+                        .usernameParameter("username")
+                        .passwordParameter("password")
+                        .permitAll()
+                .and()
+                    .authorizeRequests().antMatchers("/**").permitAll()
+                .and()
+                .logout()
+                .and()
+                .csrf().disable();
 
     }
 }

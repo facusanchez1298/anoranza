@@ -22,120 +22,83 @@
                     <input type="checkbox" id = "menu-bar">
                     <label class = "icon-menu" for = "menu-bar"></label>
 
-                    <nav class = "menu">
-                      <a href="/">Inicio</a>
-                      <a href="/reserva">Reservas</a>
-                      <a href="/actividades">Actividades</a>
-                      <a href="/instalaciones">Instalaciones</a>
-                      <a href="/contacto">Contacto</a>
-                    </nav>
+                <nav class = "menu">
+                    <a href="/">Inicio</a>
+                    <a href="/reserva">Reservas</a>
+                    <a href="/actividades">Actividades</a>
+                    <a href="/instalaciones">Instalaciones</a>
+                    <a href="/contacto">Contacto</a>
+                    <a href="/logout">Cerrar sesion</a>
+                </nav>
             </div>
         </header>
-    
+
         <main>
-            
-            <section class="contacto">
-               
-                
-                <div class="datos">
-                       
+
+            <form action="/sendMail" method="post" class="form">
+
+                <section class="contacto">
+
+
+                    <div class="datos">
+
                         <h3>Contacto</h3>
 
-                   
-                   <div class="nombres">
-                    
-                        <input type="text" class="nombre" placeholder="Nombre" id="nombre">
-                    
-                    </div>
-                    
-                    <div class="tel">
-                    
-                        <input type="text" class="telefono" placeholder="Telefono" id="telef">
-                    
-                    </div>
-                    
-                    <div class="correo">
-                    
-                        <input type="text" class="mail" placeholder="E-mail" id="email">
-                    
-                    </div>
-                
-                    <div class="consulta">
-                    
-                        <textarea rows="15" wrap="soft" class="texto" placeholder="Escriba su consulta..." id="consulta"></textarea>
-                    
-                    </div>
-                    
-                    <div class="enviar">
-                        
-                        <button onclick="reserva()" class="boton">Enviar</button>
-                        
-                        <!-- SCRIPT BOTON CONTACTO-->
-                        
-                        <script>
-                            
-                            
-                            function reserva(){
-                                
-                                //email
-                                var email =  document.getElementById('email').value;
-                                
-                                //consulta
-                                var consulta =  document.getElementById('consulta').value;
-                                
-                                //Verificaion vacío
-                                if(email.empty){
-                                    
-                                    window.alert("Complete el campo E-mail.");
-                                    
-                                }else{
-                                    
-                                    console.log("Email: " + email);
-                                    
-                                }
-                                
-                                
-                                if(consulta.empty){
-                                    
-                                    window.alert("Complete el campo Consulta.");
-                                    
-                                }else{
-                                    
-                                    console.log("Consulta: " + consulta);
-                                    
-                                }
 
-                               
-                            }
-                        
-                        
-                        </script>
-                        
-                    </div>
-                    
-                    
-                </div>
+                        <div class="nombres">
 
-            </section>
+                            <input type="text" class="nombre" placeholder="Nombre" id="nombre" name="name" required>
+
+                        </div>
+
+                        <div class="tel">
+
+                            <input type="number" class="telefono" placeholder="Telefono" id="telef" name="tel" required>
+
+                        </div>
+
+                        <div class="correo">
+
+                            <input type="email" class="mail" placeholder="E-mail" id="email" name="mail" required>
+
+                        </div>
+
+                        <div class="consulta">
+
+                            <textarea name="consulta" rows="15" wrap="soft" class="texto" placeholder="Escriba su consulta..." id="consulta" required></textarea>
+
+                        </div>
+
+                        <div class="enviar">
+
+                            <input type="submit" value="Enviar" class="boton">
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+            </form>
 
         </main>
-        
-        <footer>
-           
-           <div class = "contenedor">
-               
-               <p>Decodex. Todos los derechos reservados &reg; 2019.</p>
-               
-               <div class="sociales">
-                   
-                   <a class="icon-twitter" href="#"></a>
-                   <a class="icon-instagram" href="#"></a>
-                   <a class="icon-facebook-squared" href="#"></a>
-                   
-               </div>
 
-           </div>
-            
+        <footer>
+
+            <div class = "contenedor">
+
+                <p><a href="https://booted-rifles.000webhostapp.com/index.html.html">Decodex</a>. Todos los derechos reservados &reg; 2019.</p>
+
+                <div class="sociales">
+
+                    <a class="icon-instagram" href="https://www.instagram.com/decodex_oficial/"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/Decodex-106447150711317/"></a>
+
+                </div>
+
+            </div>
+
         </footer>
 
     </body>

@@ -1,97 +1,162 @@
-body{
-    background: linear-gradient(to right, #5a3f37, #2c7744);
-}
 
-.date{
+
+.form{
     background-color: aliceblue;
-/*
-    margin-left: 10%;
-    margin-right: 10%;
-*/
-/*
-    margin-top: 150px;
-    margin-bottom: 60px;
-*/
-    
-    width: 80%;
-    height: 530px;
-    border-radius: 5px;
-    margin: 9% auto;
+    margin: 25% 3%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
 }
 
-.date h3{
-    padding-top: 20px;
-    font-size: 35px;
+.form label{
+    font-size: 18px;
+}
+
+.form h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+/*FECHAS*/
+
+.fechas label{
+    margin-bottom: 3%;
 }
 
 .fechas{
-    
-    display: block;
-    margin-left: 20%;
-    margin-top: 40px;
-    
-}
+    padding: 3%;
+    border: 1px solid gray;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 
-.habitaciones{
-    display: block;
-    margin-left: 20%;
-    
-}
-
-.personas{
-    display: block;
-    margin-left: 20%;
-    
-}
-
-.reservar{
-    display: block;
-    margin-left: 20%;
-}
-
-.entrada, .salida, .habitaciones-numero, .personas-numero{
-    
-    width: 70%;
-    height: 45px;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px; 
-    outline: none;
 }
 
 .boton{
-    width: 70%;
-    height: 45px;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px; 
-    background-color: transparent;
-    border: 1px solid gray ;
-    color: black;
+    margin: 10px 0px;
 }
 
-.boton:hover{
-    
-    background-color:rgba(86,83,206,0.3);
-    
+.entrada,.salida{
+
+    height: 30px;
+
+}
+
+.entrada{
+    margin-bottom: 12px;
 }
 
 
-@media (max-width: 400px){
-    
-    .date{
-        margin: 15% 11%;
+#fEntrada, #fSalida{
+
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+
+}
+
+/*HABITACIONES*/
+
+.habitaciones{
+    margin-top: 5%;
+    padding: 3%;
+    border: 1px solid gray;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.habi{
+    margin-bottom: 12px;
+}
+
+.habi,.cant{
+    height: 30px;
+    font-size: 18px;
+
+}
+
+.boton{
+
+    background: none;
+    height: 30px;
+    font-size: 19px;
+    border: 1px solid darkseagreen;
+}
+
+
+/*PAGO*/
+
+.pago{
+
+    margin-top: 5%;
+    padding: 3%;
+    border: 1px solid gray;
+
+}
+
+.datos{
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 3%;
+    width: 100%;
+
+
+}
+
+.nombre,.tarjeta,.vencimiento,.cod{
+
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 8px;
+}
+
+/*BOTON*/
+
+.confirmar{
+    width: 100%;
+
+}
+
+.botonReserva{
+    width: 100%;
+    margin: 5% 0%;
+    height: 40px;
+    border: 2px solid darkseagreen;
+    font-size: 25px;
+    background-color: darkseagreen
+}
+
+/*INPUT*/
+
+input:valid{
+
+    border: 1px solid darkseagreen;
+
+}
+
+input:invalid{
+
+    border: 1px solid red;
+
+}
+
+@media (min-width: 800px){
+
+    .form{
+        width: 80%;
+        margin: 10%;
+
     }
-    
-    .fechas,.habitaciones,.personas,.reservar{
-        margin-left: 10%;
-        
-        width: 100%;
-        
-    }
-    
-}
 
+}
 
 
 

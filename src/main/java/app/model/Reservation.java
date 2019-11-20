@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -23,9 +24,9 @@ public class Reservation {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
-  @ManyToOne(fetch = FetchType.LAZY)
   @JsonBackReference
-  @NotNull
+  @ManyToOne
+  @JoinColumn(name = "user")
   private User user;
   @NotNull
   @Temporal(TemporalType.DATE)
@@ -33,32 +34,36 @@ public class Reservation {
   @NotNull
   @Temporal(TemporalType.DATE)
   private Date salida;
- /* @ManyToMany
-  @JoinTable(
-    name = "habitaciones_reservations",
-    joinColumns = @JoinColumn(name = "reservation_id"),
-    inverseJoinColumns = @JoinColumn(name = "habitacion_id"))*/
   @OneToMany(
     fetch = FetchType.EAGER,
-    mappedBy = "habitacion",
+    mappedBy = "reservation",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  @JsonManagedReference
-  private List<reservationHabitacion> habitaciones = new ArrayList<>();
+  //@JsonManagedReference
+  private List<ReservationHabitacion> habitaciones = new ArrayList<>();
+  private float price;
 
   public Reservation() {
   }
 
-  public Reservation(int id, @NotNull User user,
-    @NotNull Date ingreso, @NotNull Date salida) {
+  public Reservation(int id, Date ingreso, Date salida, User user) {
     this.id = id;
     this.user = user;
     this.ingreso = ingreso;
     this.salida = salida;
   }
 
-  public void addhabitations(int habitationId, int quantity){
-    habitaciones.add(new reservationHabitacion(habitationId, this.id, quantity ));
+  public void addhabitations(int habitationId, int quantity, Habitacion habitacion){
+    ReservationHabitacion reservationHabitacion = new ReservationHabitacion(this.id, habitationId, quantity, this, habitacion);
+    this.habitaciones.add(reservationHabitacion);
+    addPrice(getHabitaciones());
+  }
+
+  public void addPrice(List<ReservationHabitacion> reservationHabitacion){
+    this.price = 0;
+    for (int i = 0; i < reservationHabitacion.size(); i++) {
+      this.price += reservationHabitacion.get(i).getPrecio();
+    }
   }
 
   public int getId() {
@@ -93,11 +98,19 @@ public class Reservation {
     this.salida = salida;
   }
 
-  public List<reservationHabitacion> getHabitaciones() {
+  public List<ReservationHabitacion> getHabitaciones() {
     return habitaciones;
   }
 
-  public void setHabitaciones(List<reservationHabitacion> habitaciones) {
+  public void setHabitaciones(List<ReservationHabitacion> habitaciones) {
     this.habitaciones = habitaciones;
+  }
+
+  public float getPrice() {
+    return price;
+  }
+
+  public void setPrice(float price) {
+    this.price = price;
   }
 }

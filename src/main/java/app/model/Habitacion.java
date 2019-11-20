@@ -1,6 +1,7 @@
 package app.model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -18,8 +19,10 @@ public class Habitacion{
     mappedBy = "habitacion",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  @JsonManagedReference
-  private List<reservationHabitacion> reservation;
+  //@JsonBackReference
+  @JsonIgnore
+  private List<ReservationHabitacion> reservation;
+  private float price;
 
   public Habitacion() {
   }
@@ -56,11 +59,19 @@ public class Habitacion{
     this.description = description;
   }
 
-  public List<reservationHabitacion> getReservation() {
+  public List<ReservationHabitacion> getReservation() {
     return reservation;
   }
 
-  public void setReservation(List<reservationHabitacion> reservation) {
+  public void setReservation(List<ReservationHabitacion> reservation) {
     this.reservation = reservation;
+  }
+
+  public void setPrice(float price) {
+    this.price = price;
+  }
+
+  public float getPrice() {
+    return price;
   }
 }

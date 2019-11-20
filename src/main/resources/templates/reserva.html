@@ -1,19 +1,18 @@
 <html>
-   <head>
-        <title>Reservas</title>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-        
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/fontello.css">
-        <link rel="stylesheet" href="css/banner.css">
-        <link rel="stylesheet" href="css/reserva.css">
-        <link rel="stylesheet" href="reserva.js">
-        
+<head>
+    <title>Añoranzas Chaqueñas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 
-    </head>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/reserva.css">
+
+    <script type="text/javascript" src="formulario.js"></script>
+
+
+</head>
     <body>
 
         <header>
@@ -25,150 +24,136 @@
                 
                     <input type="checkbox" id = "menu-bar">
                     <label class = "icon-menu" for = "menu-bar"></label>
-                
+
                 <nav class = "menu">
                     <a href="/">Inicio</a>
                     <a href="/reserva">Reservas</a>
                     <a href="/actividades">Actividades</a>
                     <a href="/instalaciones">Instalaciones</a>
                     <a href="/contacto">Contacto</a>
+                    <a href="/logout">Cerrar sesion</a>
+
                 </nav>
             </div>
         </header>
-        
+
         <main>
 
-            <section id="reserva">
-                
-                
-                <div class="date">
-                    
-                    <h3>Reservas</h3>
-                    
-                    <div class="fechas">
-
-                        <input onfocus="(this.type='date')" class="entrada" placeholder="Entrada" id = "fEntrada">
-                        
-                        <input onfocus="(this.type='date')" class="salida" placeholder="Salida" id= "fSalida">
 
 
-                    </div>
-                    
-                    <div class="habitaciones">
-                    
-                        <select id = "habitaciones" class="habitaciones-numero">
+            <!--            <form action="#" class="form" method="post" name="form" onsubmit="return validarDatos()">-->
 
-                            <option disabled selected>Habitaciones</option>
-                            
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
+            <form action="https://probandocopia.herokuapp.com/addReservation" class="form" method="post">
 
-                        </select>
+                <h1>Reservas</h1>
+
+                <div class="fechas">
+
+                    <label>Fechas:</label>
+
+                    <div class="entrada">
+
+                        <input onfocus="(this.type='date')" id="fEntrada" placeholder="Fecha Entrada" required min="2019-10-22" name="entrada">
 
                     </div>
-                    
-                    <div class="personas">
-                        
-                        <select id = "personas" class="personas-numero">
 
-                            <option disabled selected>Personas</option>
-                            
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="1">9</option>
-                            <option value="2">10</option>
-                            <option value="3">11</option>
-                            <option value="4">12</option>
-                            <option value="5">13</option>
-                            <option value="6">14</option>
-                            <option value="7">15</option>
-                            <option value="8">16</option>
+                    <div class="salida">
 
-                        </select>
-                        
+                        <input onfocus="(this.type='date')" id="fSalida" placeholder="Fecha salida" required min="2019-10-23" name="salida">
+
                     </div>
-                    
-                    <div class="reservar">
-                        
-                        <button onclick = "reserva()" class="boton">Reservar</button>
-                        
-                        <!-- SCRIPT BOTON RESERVAR-->
-                        
-                        <script>
-                            
-                            
-                            function reserva(){
-                                
-                                //fechas
-                                var fEntrada =  document.getElementById('fEntrada').value;
-                                var fSalida =  document.getElementById('fSalida').value;
-                                
-                                //habitaciones
-                                var habitaciones = document.getElementById('habitaciones').value;
-                                    
-                                //personas
-                                var personas = document.getElementById('personas').value;
-                                
-                                if(fEntrada > fSalida){
-                                    
-                                    window.alert("La fecha de ingreso no puede ser mayor a la de salida.");
-                                    
-                                }else{
-                                    
-                                    console.log("Fecha entrada: " + fEntrada);
-                                    console.log("Fecha salida: " + fSalida);
-                                }
-                                
-                                
-                                console.log("Habitaciones: " + habitaciones);
-                                console.log("Personas: " + personas);
-                               
-                            }
-                        
-                        
-                        </script>
-                        
-                        
-                        
+
+
+
+                </div>
+
+                <div class="habitaciones">
+
+                    <label for="habi">Seleccioná habitación: </label><br>
+
+                    <select class="habi" id="habi" name="habitacion">
+
+                        <option disabled selected value="0" >Habitaciones</option>
+
+                        <option value="1">Simple / Doble Individual</option>
+
+                        <option value="2"> Doble Matrimonial</option>
+
+                        <option value="3"> Triple Individual</option>
+
+                        <option value="4"> Triple Matrimonial</option>
+
+                        <option value="5"> Cuádruple Matrimonial</option>
+
+                        <option value="6"> Quíntuple / Séxtuple</option>
+
+                        <option value="7"> Suite</option>
+
+                    </select>
+
+                    <select class="cant" id="cant"  name="cantidad">
+
+                        <option disabled selected value="0">Cantidad</option>
+
+                        <option value="1">1</option>
+
+                        <option value="2">2</option>
+
+                        <option value="3">3</option>
+
+                        <option value="4">4</option>
+
+                        <option value="5">5</option>
+
+                    </select><br>
+
+                </div>
+
+                <div class="pago">
+
+                    <label>Detalles de pago:</label><br>
+
+                    <div class="datos">
+
+                        <input type="text" placeholder="Nombre" class="nombre" id="nomb" required name="nombre">
+
+                        <input type="number" placeholder="Numero de tarjeta" class="tarjeta" id="num" required title="Ingrese número de tarjeta de crédito" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="16" name="tarjeta">
+
+                        <input onfocus="(this.type='date')" id="venc" placeholder="Fecha de expiración" class="vencimiento" title="Ingrese fecha de expiración" min="2019-10-30" required name="vencimiento">
+
+                        <input type="password" placeholder="Código de seguridad" class="cod" id="cod" title="Ingrese código de 3 dígitos" required size="3" maxlength="3" name="contraseña">
+
                     </div>
 
                 </div>
-                
-                
+
+                <div class="confirmar">
+
+                    <input type="submit" value="Reservar" class="botonReserva" >
+
+                </div>
 
 
-            </section>
+            </form>
+
         </main>
-        
-        
-        <footer>
-           
-           <div class = "contenedor">
-               
-               <p>Decodex. Todos los derechos reservados &reg; 2019.</p>
-               
-               <div class="sociales">
-                   
-                   <a class="icon-twitter" href="#"></a>
-                   <a class="icon-instagram" href="#"></a>
-                   <a class="icon-facebook-squared" href="#"></a>
-                   
-               </div>
 
-           </div>
-            
+
+        <footer>
+
+            <div class = "contenedor">
+
+                <p><a href="https://booted-rifles.000webhostapp.com/index.html.html">Decodex</a>. Todos los derechos reservados &reg; 2019.</p>
+
+                <div class="sociales">
+
+                    <a class="icon-instagram" href="https://www.instagram.com/decodex_oficial/"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/Decodex-106447150711317/"></a>
+
+                </div>
+
+            </div>
+
         </footer>
         
     </body>

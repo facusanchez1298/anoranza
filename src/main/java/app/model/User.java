@@ -5,12 +5,12 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 @Entity(name = "user")
 public class User {
@@ -33,17 +33,16 @@ public class User {
   @Column(name = "direccion")
   private String direccion;
   @Column(name = "telefono")
-  @NotNull
-  private Integer telefono;
+  private String telefono;
   @Column(name = "address")
-  @NotBlank
   private String address;
+  @JsonManagedReference
   @OneToMany(
     mappedBy = "user",
-    cascade = CascadeType.ALL,
-    orphanRemoval = true
+    fetch= FetchType.EAGER
+    //cascade = CascadeType.ALL,
+    //orphanRemoval = true
   )
-  @JsonManagedReference
   private List<Reservation> reservation;
 
   public User(){
@@ -51,13 +50,15 @@ public class User {
   }
 
   public User(
+    int id,
     @NotBlank String userName,
     @NotBlank String password,
     @NotBlank String name,
     @NotBlank String direccion,
     @NotBlank String surName,
-    @NotNull Integer telefono,
+    String telefono,
     @NotBlank String address) {
+    this.id = id;
     this.userName = userName;
     this.password = password;
     this.name = name;
@@ -115,11 +116,11 @@ public class User {
     this.surName = surName;
   }
 
-  public Integer getTelefono() {
+  public String getTelefono() {
     return telefono;
   }
 
-  public void setTelefono(Integer telefono) {
+  public void setTelefono(String telefono) {
     this.telefono = telefono;
   }
 
