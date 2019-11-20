@@ -39,7 +39,7 @@ public class Reservation {
     mappedBy = "reservation",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  @JsonManagedReference
+  //@JsonManagedReference
   private List<ReservationHabitacion> habitaciones = new ArrayList<>();
   private float price;
 

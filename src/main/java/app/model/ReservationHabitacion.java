@@ -25,14 +25,14 @@ public class ReservationHabitacion {
 
   @ManyToOne
   @JoinColumn(name = "idReservation", referencedColumnName = "id", insertable = false, updatable = false)
-  @JsonBackReference
-  //@JsonIgnore
+  //@JsonBackReference
+  @JsonIgnore
   private Reservation reservation;
 
   @ManyToOne
   @JoinColumn(name = "idHabitacion", referencedColumnName = "id", insertable = false, updatable = false)
-  @JsonManagedReference
-  //@JsonIgnore
+  //sonManagedReference
+  @JsonIgnore
   private Habitacion habitacion;
 
   public ReservationHabitacion() {

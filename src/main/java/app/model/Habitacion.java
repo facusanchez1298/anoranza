@@ -20,8 +20,8 @@ public class Habitacion{
     mappedBy = "habitacion",
     cascade = CascadeType.ALL,
     orphanRemoval = true)
-  @JsonBackReference
-  //@JsonIgnore
+  //@JsonBackReference
+  @JsonIgnore
   private List<ReservationHabitacion> reservation;
   private float price;
 
