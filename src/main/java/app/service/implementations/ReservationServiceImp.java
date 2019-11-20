@@ -6,8 +6,10 @@ import app.model.ReservationHabitacion;
 import app.model.User;
 import app.repository.HabitacionRepository;
 import app.repository.ReservationRepository;
+import app.service.interfaces.EmailService;
 import app.service.interfaces.ReservationService;
 import app.service.interfaces.UserServices;
+import java.io.File;
 import java.util.Date;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
@@ -15,16 +17,20 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ReservationServiceImp implements ReservationService {
+  public static final String FACTURA = "src\\main\\resources\\jasper\\jasperOutput\\Factura";
 
   private ReservationRepository reservationRepository;
   private UserServices userServices;
   private HabitacionRepository habitacionRepository;
+  private EmailService emailService;
 
   public ReservationServiceImp(ReservationRepository reservationRepository,
-    UserServices userServices, HabitacionRepository habitacionRepository) {
+    UserServices userServices, HabitacionRepository habitacionRepository,
+    EmailService emailService) {
     this.reservationRepository = reservationRepository;
     this.userServices = userServices;
     this.habitacionRepository = habitacionRepository;
+    this.emailService = emailService;
   }
 
   @Override
@@ -39,7 +45,21 @@ public class ReservationServiceImp implements ReservationService {
     reservation.addhabitations(idHabitacion, quantity, habitacion );
     reservation.addPrice(reservation.getHabitaciones());
     reservationRepository.save(reservation);
+    enviarCorreo(reservation.getId(), user.getAddress());
     return ResponseEntity.status(200).build();
+  }
+
+  private void enviarCorreo(int idFactura, String correo){
+    if(!correo.equals("")) {
+      File file = new File(FACTURA + idFactura + ".pdf");
+      if (!file.exists()) {
+        Facturacion facturacion = new Facturacion();
+        facturacion.generateReport(String.valueOf(idFactura));
+      }
+      emailService.sendMessageWithAttachment(correo, "Factura Añoranza Chaqueña",
+        "recuerde que tiene 5 dias antes de su reservacion para pagar o la recervacion se dara de baja",
+        idFactura);
+    }
   }
 
   @Override
