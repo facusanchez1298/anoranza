@@ -3,9 +3,10 @@ package app.service.interfaces;
 import app.model.User;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 
-public interface UserServices {
+public interface UserServices extends UserDetailsService {
   /**
    * save a user in the data base
    * @param user new user in the data base

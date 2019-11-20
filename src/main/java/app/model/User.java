@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -34,15 +35,14 @@ public class User {
   @Column(name = "telefono")
   private String telefono;
   @Column(name = "address")
-  @NotBlank
   private String address;
+  @JsonManagedReference
   @OneToMany(
     mappedBy = "user",
-    cascade = CascadeType.ALL,
-    orphanRemoval = true
+    fetch= FetchType.EAGER
+    //cascade = CascadeType.ALL,
+    //orphanRemoval = true
   )
-  @JsonManagedReference
-  //@JsonIgnore
   private List<Reservation> reservation;
 
   public User(){
