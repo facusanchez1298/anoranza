@@ -1,6 +1,7 @@
 package app.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

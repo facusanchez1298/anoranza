@@ -59,7 +59,7 @@ public class UserServicesImp implements UserServices{
   public String SignUp(User user) {
     if(user == null)
       throw new UserNullExeption("the user entered is not valid");
-    //user.setPassword(encoder.encode(user.getPassword()));
+    user.setPassword(encoder.encode(user.getPassword()));
     dbUser.save(user);
     return String.valueOf(user.getId());
   }
