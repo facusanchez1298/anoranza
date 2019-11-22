@@ -1,4 +1,5 @@
-<html>
+<html xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
     <head>
          <title>Instalaciones</title>
         <meta charset="utf-8">
@@ -28,7 +29,10 @@
                         <a href="/actividades">Actividades</a>
                         <a href="/instalaciones">Instalaciones</a>
                         <a href="/contacto">Contacto</a>
-                        <a href="/logout">Cerrar sesion</a>
+                        <div sec:authorize="isAuthenticated()">
+                            <a href="/"><span sec:authentication="name"></span></a>
+                            <a href="/logout">Cerrar sesion</a>
+                        </div>
                     </nav>
             </div>
         </header>

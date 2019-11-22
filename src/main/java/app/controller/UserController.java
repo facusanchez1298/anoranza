@@ -5,9 +5,13 @@ import app.service.implementations.UserServicesImp;
 import app.service.interfaces.UserServices;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class UserController {
@@ -16,6 +20,8 @@ public class UserController {
     public UserController(UserServicesImp userService) {
         this.userService = userService;
     }
+
+
 
     @GetMapping("/users")
     public List<User> userList() {

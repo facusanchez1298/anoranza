@@ -1,6 +1,8 @@
 package app.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import java.security.Principal;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -13,7 +15,7 @@ import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 
 @Entity(name = "user")
-public class User {
+public class User implements Principal {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "id_user", updatable = false, nullable = false)
