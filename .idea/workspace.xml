@@ -1,24 +1,482 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/controller/UserController.java" line="39" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa0349a-213f-428c-af89-3f39807fd472" name="Default Changelist" comment="facturas con precio incluido">
+    <list default="true" id="5aa0349a-213f-428c-af89-3f39807fd472" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/añoranzas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Juan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcmail_jdk14_138.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcprov_jdk14_138.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk14_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk14_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bctsp_jdk14_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_olap4j_olap4j_0_9_7_309_JS_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringPractice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gs-rest-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ReservationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/excepciones/Classes/UnauthorizerUserException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/excepciones/Classes/UserNullExeption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/excepciones/ExceptionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Habitacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/ReservationHabitacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/ReservationHabitacionId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/para_metodos/CorreoFactura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/para_metodos/EnterDataIsFree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/para_metodos/EnterDataReservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/HabitacionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/ReservationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/Facturacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/MailComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/MailwithArch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/ReservationServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/interfaces/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/interfaces/MailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/interfaces/ReservationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/interfaces/UserServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/FinalFactura.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/FinalFactura.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/FinalFactura_descriptor.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/images/leaf_banner_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/jasperOutput/Factura.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/jasperOutput/Factura25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jasper/jasperOutput/Factura3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/actividades.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/banner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/contacto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/contactoAnoranza.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/historia.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/inicioSesion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/instalaciones.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/registro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reserva.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/font/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/font/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/font/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/font/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/font/fontello.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/ARBOL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/añoranzas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/cabalgata.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/camping.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/casas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/css/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/css/fontello-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/css/fontello-embedded.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/css/fontello-ie7-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/css/fontello-ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/css/fontello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/font/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/font/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/font/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/font/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fontello-93fa1b64/font/fontello.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/habitaciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icon-dormitorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/ingreso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/museo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/paseo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/pesca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/pesca2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/pileta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/portada.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/posada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/proveeduria.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/restaurante.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/pru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/actividades.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contacto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/historia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/html.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/inicio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/instalaciones.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/reserva.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/ApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/FrontPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/ReservationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/SendMailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/excepciones/Classes/UnauthorizerUserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/excepciones/Classes/UserNullExeption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/excepciones/ExceptionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Habitacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/ReservationHabitacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/ReservationHabitacionId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/UserRecived.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/para_metodos/CorreoFactura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/para_metodos/EnterDataIsFree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/para_metodos/EnterDataReservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/HabitacionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/ReservationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/UserRecivedRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/StorageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/Facturacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/MailComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/MailServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/MailwithArch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/ReservationServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/UserRecivedServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/implementations/UserServicesImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/MailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/ReservationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/UserRecivedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/interfaces/UserServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/FinalFactura.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/FinalFactura.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/FinalFactura_descriptor.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/images/leaf_banner_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/jasperOutput/Factura.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jasper/jasperOutput/Factura25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/actividades.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/banner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contacto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/contactoAnoranza.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/fontello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/historia.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/inicioSesion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/instalaciones.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/registro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/reserva.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/font/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/font/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/font/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/font/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/font/fontello.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/ARBOL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/añoranzas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/cabalgata.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/camping.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/casas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-embedded.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-ie7-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello-ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/css/fontello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fontello-93fa1b64/font/fontello.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/habitaciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icon-dormitorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/ingreso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/museo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/paseo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/pesca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/pesca2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/pileta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/portada.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/posada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/proveeduria.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/restaurante.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/pru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/actividades.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contacto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/historia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/html.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/inicio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/instalaciones.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/reserva.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/send_mail_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-app.ApplicationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/app.ApplicationTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/ApplicationTest.class" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1714531311">
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.merge" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.77" value="1" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="html" value="2" />
+          <entry key="jasper" value="2" />
+          <entry key="java" value="83" />
+          <entry key="png" value="1" />
+          <entry key="properties" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="83" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="8" />
+          <entry key="java" value="2002" />
+          <entry key="properties" value="47" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2002" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Properties" value="47" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="añoranzas" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/model/Servicio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/model/UserServicioId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/model/UserServicio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,10 +511,108 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>{/</find>
+      <find>sen</find>
+      <find>se</find>
+      <find>send</find>
+      <find>tipoServicio</find>
+      <find>idUsuario</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/app/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/UserRecived.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/Facturacion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/app/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/para_metodos/Correo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/interfaces/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/MailComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/para_metodos/CorreoFactura.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/interfaces/UserServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/Habitacion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/implementations/ReservationServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/para_metodos/Servicios.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/Servicios.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/UserServiciosId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/UserServicios.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/ReservationHabitacion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/ReservationHabitacionId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/Reservation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/UserServicioId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/Servicio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/model/UserServicio.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectId" id="1TlnoDVmGc6Bzhq8p4codQdQj75" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>SecurityJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SerializableHasSerialVersionUIDField</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -102,6 +658,34 @@
               <item name="anoranza viejo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="anoranza viejo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anoranza viejo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="anoranza viejo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anoranza viejo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="para_metodos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="anoranza viejo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anoranza viejo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -130,11 +714,53 @@
               <item name="jasper" type="462c0819:PsiDirectoryNode" />
               <item name="jasperOutput" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="anoranza viejo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anoranza viejo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574648641378" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\trabajos java\anoranza viejo\src\main" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\templates" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\resources\static" />
+      <recent name="D:\trabajos java\SpringPractice\src\main\java\app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.controller" />
+      <recent name="app.service.implementations" />
+      <recent name="app.service.interfaces" />
+      <recent name="app.repository" />
+      <recent name="app.model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="app.model.para_metodos" />
+      <recent name="app.service.interfaces" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,6 +772,59 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="app.Application" />
+      <module name="añoranzas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTest.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="añoranzas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app" />
+      <option name="MAIN_CLASS_NAME" value="app.ApplicationTest" />
+      <option name="METHOD_NAME" value="createUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.ApplicationTest.createUserTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.ApplicationTest.createUserTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -166,19 +845,34 @@
       <option name="project" value="LOCAL" />
       <updated>1574044433801</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ApplicationTest_createUserTest - 2019.10.21 at 23h 19m 38s.xml">
+      <configuration name="ApplicationTest.createUserTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6146789" visible="true" weight="0.22617246" />
-      <window_info id="Structure" order="1" sideWeight="0.3853211" side_tool="true" weight="0.22617246" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6179487" visible="true" weight="0.22617246" />
+      <window_info id="Structure" order="1" sideWeight="0.3820513" side_tool="true" weight="0.21104388" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="simpleUML" order="6" />
-      <window_info id="Favorites" order="7" sideWeight="0.3853211" side_tool="true" weight="0.22617246" />
+      <window_info id="Favorites" order="7" sideWeight="0.1853547" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3276923" />
@@ -186,9 +880,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3923077" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3923077" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3276923" />
       <window_info anchor="bottom" id="Sequence" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -231,6 +925,28 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="facturas con precio incluido" />
     <option name="LAST_COMMIT_MESSAGE" value="facturas con precio incluido" />
@@ -271,6 +987,237 @@
         <watch expression="reservation.habitaciones.get(0).habitacion" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserRecivedServiceImp.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/StorageService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/para_metodos/UserRecived.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/MailServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jasper/images/leaf_banner_green.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jasper/FinalFactura.jasper">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jasper/FinalFactura_descriptor.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/Facturacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/repository/UserRecivedRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/send_mail_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/interfaces/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/MailComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="87" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/para_metodos/CorreoFactura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/interfaces/UserServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/UserServicesImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/interfaces/ReservationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/ReservationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registro.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/FrontPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/controller/SendMailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/implementations/ReservationServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/ReservationHabitacionId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/ReservationHabitacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/Servicio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/UserServicioId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/Reservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#2196#2197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/Habitacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/model/UserServicio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>

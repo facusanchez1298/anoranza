@@ -1,6 +1,7 @@
 package app.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,12 +12,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 @Entity(name = "user")
 public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "id_user", updatable = false, nullable = false)
+  @Column(name = "id", updatable = false, nullable = false)
   private int id;
   @Column(name = "user_Name", unique = true)
   @NotBlank
@@ -44,6 +47,14 @@ public class User {
     //orphanRemoval = true
   )
   private List<Reservation> reservation;
+
+  @LazyCollection(LazyCollectionOption.FALSE)
+  @OneToMany(
+    mappedBy = "usuario",
+    cascade = CascadeType.ALL,
+    orphanRemoval = true)
+  //@JsonManagedReference
+  private List<UserServicio> servicios = new ArrayList<>();
 
   public User(){
 
@@ -138,6 +149,14 @@ public class User {
 
   public void setReservation(List<Reservation> reservation) {
     this.reservation = reservation;
+  }
+
+  public List<UserServicio> getServicios() {
+    return servicios;
+  }
+
+  public void setServicios(List<UserServicio> servicios) {
+    this.servicios = servicios;
   }
 }
 
