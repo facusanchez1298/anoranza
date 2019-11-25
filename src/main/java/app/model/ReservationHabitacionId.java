@@ -8,11 +8,9 @@ public class ReservationHabitacionId implements Serializable {
 
   private static final long serialVersionUID = 5787285946857659475L;
   @Column(name = "idReservation")
-
   private int idReservation;
 
   @Column(name = "idHabitacion")
-
   private int idHabitacion;
 
   public ReservationHabitacionId() {
@@ -33,5 +31,13 @@ public class ReservationHabitacionId implements Serializable {
 
   public void setIdHabitacion(int idHabitacion) {
     this.idHabitacion = idHabitacion;
+  }
+
+  public static long getSerialVersionUID() {
+    return serialVersionUID;
+  }
+
+  public int getIdReservation() {
+    return idReservation;
   }
 }
